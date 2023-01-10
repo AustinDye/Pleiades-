@@ -1,15 +1,13 @@
 <template>
-    
-
-    <div class="container d-flex">
+    <div class="container d-block d-md-flex">
       
     <div class="wrapper d-flex">
-            <div class="row flex-column justify-contnet-center align-items-center">
-                <div class="col-12">  <b>Our Tools <div class="letter-circle"></div> </b></div>
-                <div class="col-12"><img class="img-brand" src="https://www.positivethinking.tech/wp-content/uploads/2021/01/Logo-Vuejs.png" alt=""></div>
-                <div class="col-12"><img class="img-brand" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_84fd5bd582809f20ff5682d2746ffa82/shopify.png" alt=""></div>
-                <div class="col-12"><img class="img-brand" src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png" alt=""></div>
-                <div class="col-12 "><img class="img-brand azure" src="https://www.dbcloudbin.com/wp-content/uploads/2019/07/azure_logo_794_new.png" alt=""></div>
+            <div class="row justify-contnet-center align-items-center ">
+                <div class="col-12 text-center">  <b>Our Tools <div class="letter-circle"></div> </b></div>
+                <div class="col-6 col-md-12"><img class="img-brand" src="https://www.positivethinking.tech/wp-content/uploads/2021/01/Logo-Vuejs.png" alt=""></div>
+                <div class="col-6 col-md-12"><img class="img-brand" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_84fd5bd582809f20ff5682d2746ffa82/shopify.png" alt=""></div>
+                <div class="col-6 col-md-12"><img class="img-brand" src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png" alt=""></div>
+                <div class="col-6 col-md-12 "><img class="img-brand azure" src="https://www.dbcloudbin.com/wp-content/uploads/2019/07/azure_logo_794_new.png" alt=""></div>
         
             </div>
         </div>
@@ -32,6 +30,7 @@
                 </div>
             </div>
         </div>
+       
         
     </div>
    
@@ -71,12 +70,13 @@ p{
     align-self: center;
 
     border-radius: 25px;
-    padding: 5em;
+    padding: 3em;
 
     @media (max-width: 480px) {
      height: 100%;
-          
-      }
+     width: 100%;
+         
+    }
 }
 
 .wrapper-2{
@@ -101,7 +101,7 @@ p{
     font-family: geo-medium;
     margin-top: 2em;
     @media (max-width: 480px) {
-       max-width: 100%;
+        max-height: 7vh;
          
      }
 }
@@ -110,14 +110,19 @@ p{
     max-height: 10vh;
     margin-left: 25%;
     padding: 1em;
+    @media (max-width: 480px) {
+        max-height: 9vh;
+        margin-left: 15%;
+         
+     }
 
 }
 
 .letter-circle{
     background: #ffb625a3;
     z-index: -1;
-    width: 8vh;
-    height: 8vh;
+    width: 6vh;
+    height: 6vh;
     border-radius: 100%;
     position: absolute;
     bottom: 0;
@@ -125,12 +130,12 @@ p{
 }
 
 #circle-2{
-    left: 1em;
+    left: 2em;
     background: #0d5bd88f;
 }
 
 #circle-3{
-    right: 1em;
+    right: 2em;
     background: #fd4715a0;
 }
 </style>

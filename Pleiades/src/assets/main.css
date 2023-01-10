@@ -9,3 +9,39 @@
   font-family: geo-light;
   src: url(geomanist-light-webfont.ttf);
 }
+
+.swiper {
+  width: 35vh;
+  height: 50vh;
+
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 480px) {
+  .swiper{
+    width: 80vw;
+    height: 60vh;
+
+  }
+  
+  .swiper-slide{
+    background-color: white;
+  }
+}
+
+
+
+
+
+
+

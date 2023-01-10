@@ -19,7 +19,7 @@
                 let scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
                 moon1.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 1));
-                moon2.style.opacity = Math.max(0, Math.min(1, -scroll / 1200 + 1));
+            
                 moon2.style.marginTop = scroll.toString() +  'px';
             });
 
