@@ -14,7 +14,7 @@
                     <swiper-slide>
                         <div class="row justify-content-center align-items-center">
                            
-                            <div class="col-12 img-brand"><img src="../assets/img/portsches-logo.webp" alt=""></div>
+                            <div class="col-12 img-brand"><img src="/src/assets/img/portsches-logo.webp" alt=""></div>
                             <div class="col-12 d-flex justify-content-center align-items-center flex-column">
                                 <ul>
                                     <li>Shopify Storefront</li>
@@ -29,7 +29,7 @@
                     <swiper-slide>
                         <div class="row justify-content-center align-items-center">
                            
-                            <div class="col-12 img-brand deb"><img src="../assets/img/Screenshot 2023-01-01 at 11.13.37 AM.png" alt=""></div>
+                            <div class="col-12 img-brand deb"><img src="/src/assets/img/debdye.png" alt=""></div>
                             <div class="col-12 d-flex justify-content-center align-items-center flex-column">
                                 <ul>
                                     <li>Shopify Storefront</li>
@@ -93,7 +93,7 @@ export default {
     margin-top: 7vh;
     padding: 2em;
     padding-right: 10em;
-    background: url('../assets/img/background.png');
+    background: url('/src/assets/img/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
