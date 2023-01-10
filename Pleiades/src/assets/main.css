@@ -1,0 +1,11 @@
+@import './base.css';
+
+@font-face {
+  font-family: geo-medium;
+  src: url(geomanist-medium-webfont.ttf);
+}
+
+@font-face {
+  font-family: geo-light;
+  src: url(geomanist-light-webfont.ttf);
+}
