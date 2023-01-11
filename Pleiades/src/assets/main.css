@@ -11,7 +11,7 @@
 }
 
 .swiper {
-  width: 23vw;
+  width: 25vw;
   height: 55vh;
 
 }
@@ -20,11 +20,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 25px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  background-color: white;
+  background-color: black;
   outline: 1px solid rgba(0, 0, 0, 0.241);
 }
 
@@ -38,6 +38,13 @@
   .swiper-slide{
     background-color: white;
   }
+}
+
+.swiper-pagination-bullet{
+  background-color: white;
+} 
+.swiper-pagination-bullet-active{
+  background-color: white;
 }
 
 

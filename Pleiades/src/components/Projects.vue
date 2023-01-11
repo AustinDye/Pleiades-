@@ -4,14 +4,16 @@
         <div class="container justify-content-center align-items-center d-flex">
   
             <div class="row">
-                <div class="col-12 col-lg-6 justify-content-center align-items-center d-flex flex-column">
+                <div class="col-12 col-lg-6 justify-content-center align-items-center d-flex flex-column left-side">
                     <h1 class="text-center">Our Work</h1>
                     <p class="text-center">Check out our past projects.</p>
                 </div>
-                <div class="col-12 col-lg-6 justify-content-center align-items-center d-flex">
+                <div class="col-12 col-md-6 justify-content-center align-items-center d-flex right-side">
                     <swiper
-                    :effect="'cards'"
-                    :grabCursor="true"
+                    :spaceBetween="30"
+                    :pagination="{
+                      clickable: true,
+                    }"
                     :modules="modules"
                     class="mySwiper"
                   >
@@ -33,6 +35,7 @@
                             </div>
                         </div>
                     </swiper-slide>
+                    
                     <swiper-slide>
                         <div class="row justify-content-center align-items-center">
                            
@@ -49,12 +52,13 @@
                                 </div>
                     
                             </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>Slide 3</swiper-slide>
-              
+                        </div>    
+                    </swiper-slide
+                    ><swiper-slide>Slide 3</swiper-slide>
                   </swiper>
                 </div>
+                
+                
             </div>
             
             <!--<div class="row justify-content-center align-items-center">
@@ -74,15 +78,14 @@
     // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-// Import Swiper styles
 import "swiper/css";
 
-import "swiper/css/effect-cards";
+import "swiper/css/pagination";
 
 import "../assets/main.css";
 
 // import required modules
-import { EffectCards } from "swiper";
+import { Pagination } from "swiper";
 
 export default {
   components: {
@@ -91,7 +94,7 @@ export default {
   },
   setup() {
     return {
-      modules: [EffectCards],
+      modules: [Pagination],
     };
   },
 };
@@ -100,16 +103,13 @@ export default {
 <style lang="scss" scoped>
 .container{
     margin-top: 7vh;
-    width: 60%;
-    padding: 5em;
-    background: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
     color: black;
     font-family: geo-medium;
-
+    width: 100%;
 
     @media (max-width: 480px) {
         background: none;
@@ -118,15 +118,29 @@ export default {
 
 ul{
     padding-top: 1em;
-    color: black;
+    color: white;
     font-family: geo-light;
     font-size: .8em;
 }
 
+.left-side{
+    background-color: white;
+    border-radius: 25px 0px 0px 25px;
+    color: black;
+    width: 50%;
+    padding: 5em;
+}
+
+.right-side{
+    background-color: black;
+    border-radius: 0px 25px 25px 0px;
+    width: 50%;
+    
+}
 a{
     padding: 1em;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: geo-light;
     font-weight: 500;
 }
@@ -150,7 +164,7 @@ p{
 }
 
 .link-tag{
-    background: black;
+    background: white;
     border-radius: 2px;
 }
 
