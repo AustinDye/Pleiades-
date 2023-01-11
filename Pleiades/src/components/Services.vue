@@ -8,7 +8,8 @@
                 <div class="card-holder">
                      
                     <div class="text-wrapper">
-                        <b>Digital Experiences <div class="letter-circle"></div> </b>
+                        <b >Digital  </b>
+                        <b class="dark-side">Experiences</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor iure saepe obcaecati accusamus, vel assumenda explicabo voluptas recusandae, quidem amet magni laudantium quam laboriosam. Eveniet maiores alias nemo soluta!</p>
                     </div>
                     <img class="image-icon d-none d-lg-flex" id="seo" src="../assets/img/custom-svg.svg" alt="">
@@ -18,7 +19,7 @@
                 <div class="card-holder">
                     <img class="image-icon d-none d-lg-flex" id="seo" src="../assets/img/seo-svg.svg" alt="">
                     <div class="text-wrapper">
-                        <b>Ecommerce <div id="letter-circle-2" class="letter-circle"></div></b>
+                        <b>Ecommerce </b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor iure saepe obcaecati accusamus, vel assumenda explicabo voluptas recusandae, quidem amet magni laudantium quam laboriosam. Eveniet maiores alias nemo soluta!</p>
                     </div>
                 </div>
@@ -26,7 +27,8 @@
             <div class="col-12">
                 <div class="card-holder">
                     <div class="text-wrapper">
-                        <b>Digital Support <div id="letter-circle-3" class="letter-circle"></div></b>
+                        <b>Online  </b>
+                        <b class="dark-side">Presence</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor iure saepe obcaecati accusamus, vel assumenda explicabo voluptas recusandae, quidem amet magni laudantium quam laboriosam. Eveniet maiores alias nemo soluta!</p>
                     </div>
                     <img class="image-icon d-none d-lg-flex" id="fullstack" src="../assets/img/coding.svg" alt="">
@@ -82,6 +84,15 @@ h1{
     
 }
 
+.dark-side{
+    background-color: black;
+    color: white;
+    font-size: .2em;
+    padding: .2em;
+    border-radius: 25px;
+
+}
+
 .text-wrapper{
   font-family: geo-medium;
   height: 100%;
@@ -90,26 +101,10 @@ h1{
 
 }
 
-.letter-circle{
-    background: #ffb625a3;
-    z-index: -1;
-    width: 8vh;
-    height: 8vh;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 0;
-    right: -1vw;
-}
 
-
-#letter-circle-2{
-    background: #0d5bd88f;
-    left: 0;
-  
-}
 
 #letter-circle-3{
-    background: #fd4715a0;
+
 }
 
 .text-wrapper b{

@@ -125,12 +125,14 @@
       padding: 2em;
       width:42vw;
       border-radius: 0px 25px 25px 0px;
-      @media (max-width: 480px) {
-        width: 99%;
+       @media (max-width: 900px) {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
      
-      
-         
-     }
+       }
+
+     
     }
 
     .contact-info{
@@ -141,9 +143,13 @@
       @media (max-width: 480px) {
         width: 100%;
         padding: 2em;
-     
-      
-         
+  
+     }
+     @media (max-width: 900px) {
+      height: 100%;
+      width: 100%;
+      border-radius: 25px 25px 0px 0px;
+   
      }
       
     }

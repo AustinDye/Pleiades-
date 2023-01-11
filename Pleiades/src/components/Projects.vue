@@ -1,14 +1,14 @@
 <template>
 
 
-        <div class="container justify-content-center align-items-center d-flex">
+        <div class="container">
   
             <div class="row">
-                <div class="col-12 col-lg-6 justify-content-center align-items-center d-flex flex-column left-side">
+                <div class="col-12  justify-content-center align-items-center d-flex flex-column left-side">
                     <h1 class="text-center">Our Work</h1>
                     <p class="text-center">Check out our past projects.</p>
                 </div>
-                <div class="col-12 col-md-6 justify-content-center align-items-center d-flex right-side">
+                <div class="col-12 justify-content-center align-items-center d-flex right-side">
                     <swiper
                     :spaceBetween="30"
                     :pagination="{
@@ -19,7 +19,6 @@
                   >
                     <swiper-slide>
                         <div class="row justify-content-center align-items-center">
-                           
                             <div class="col-12 img-brand"><img src="/src/assets/img/portsches-logo.webp" alt=""></div>
                             <div class="col-12 d-flex justify-content-center align-items-center flex-column">
                                 <ul>
@@ -102,7 +101,7 @@ export default {
 
 <style lang="scss" scoped>
 .container{
-    margin-top: 7vh;
+    margin-top: 15vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -125,16 +124,30 @@ ul{
 
 .left-side{
     background-color: white;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 25px 25px 0px 0px;
     color: black;
-    width: 50%;
+    width: 100%;
     padding: 5em;
+
+    @media (max-width: 900px) {
+        height: 100%;
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+     
+       }
 }
 
 .right-side{
     background-color: black;
-    border-radius: 0px 25px 25px 0px;
-    width: 50%;
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
+
+    @media (max-width: 900px) {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+            
+       }
     
 }
 a{
@@ -150,17 +163,13 @@ h1{
     font-family: geo-medium;
     font-weight: 900;
     
-    @media (max-width: 480px) {
-        color: white;    
-    }
+  
 }
 
 p{
     font-family: geo-light;
     font-size: 1.2em;
-    @media (max-width: 480px) {
-        color: white;    
-    }
+   
 }
 
 .link-tag{
