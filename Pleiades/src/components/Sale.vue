@@ -1,20 +1,20 @@
 <template>
-    <div class="container d-block d-md-flex">
+    <div class="container d-block d-lg-flex">
       
     <div class="wrapper d-flex">
             <div class="row justify-contnet-center align-items-center ">
                 <div class="col-12 text-center">  <b>Our Tools <div class="letter-circle"></div> </b></div>
-                <div class="col-6 col-md-12"><img class="img-brand" src="https://www.positivethinking.tech/wp-content/uploads/2021/01/Logo-Vuejs.png" alt=""></div>
-                <div class="col-6 col-md-12"><img class="img-brand" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_84fd5bd582809f20ff5682d2746ffa82/shopify.png" alt=""></div>
-                <div class="col-6 col-md-12"><img class="img-brand" src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png" alt=""></div>
-                <div class="col-6 col-md-12 "><img class="img-brand azure" src="https://www.dbcloudbin.com/wp-content/uploads/2019/07/azure_logo_794_new.png" alt=""></div>
+                <div class="col-6 col-lg-12"><img class="img-brand" src="https://www.positivethinking.tech/wp-content/uploads/2021/01/Logo-Vuejs.png" alt=""></div>
+                <div class="col-6 col-lg-12"><img class="img-brand" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_84fd5bd582809f20ff5682d2746ffa82/shopify.png" alt=""></div>
+                <div class="col-6 col-lg-12"><img class="img-brand" src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png" alt=""></div>
+                <div class="col-6 col-lg-12 "><img class="img-brand azure" src="https://www.dbcloudbin.com/wp-content/uploads/2019/07/azure_logo_794_new.png" alt=""></div>
         
             </div>
         </div>
 
         <div class="wrapper-2">
             <div class="row flex-column justify-contnet-center align-items-center">
-                <div class="about-section">
+                <div class="about-section d-flex">
                  
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-12 d-flex flex-column">
@@ -62,17 +62,15 @@ p{
     margin-top: 7vh;
     width: 35%;
     padding: 10em;
-
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-
     border-radius: 25px;
     padding: 3em;
-
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
      height: 100%;
      width: 100%;
          
@@ -80,14 +78,18 @@ p{
 }
 
 .wrapper-2{
-    padding: 10em;
-
+    padding: 5em;
     background-color: rgb(255, 255, 255);
     display: flex;
     margin-top: 7vh;
     align-self: center;
     border-radius: 25px;
-    padding: 5em;
+    height: 100vh;
+    @media (max-width: 900px) {
+        height: auto;
+  
+            
+       }
 }
 
 .wrapper-2 h2 {
@@ -100,7 +102,7 @@ p{
     max-height: 10vh;
     font-family: geo-medium;
     margin-top: 2em;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
         max-height: 7vh;
          
      }
@@ -110,7 +112,7 @@ p{
     max-height: 10vh;
     margin-left: 25%;
     padding: 1em;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
         max-height: 9vh;
         margin-left: 15%;
          

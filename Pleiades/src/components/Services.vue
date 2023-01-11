@@ -47,7 +47,7 @@
 h1{
  
     color: white;
-    font-size: 8em;
+    font-size: 10em;
     font-family: geo-medium;
     padding-bottom: 5vh;
     text-align: center;
@@ -83,7 +83,7 @@ h1{
 }
 
 .text-wrapper{
-  font-family: geo-light;
+  font-family: geo-medium;
   height: 100%;
   padding: 1em;
 
@@ -122,6 +122,7 @@ h1{
 
 .text-wrapper p {
     font-size: 1.2em;
+    font-family: geo-light;
 }
 
 img {

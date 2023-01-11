@@ -1,10 +1,14 @@
 <template>
 
 
-        <div class="container">
-            
+        <div class="container justify-content-center align-items-center d-flex">
+  
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6 justify-content-center align-items-center d-flex flex-column">
+                    <h1 class="text-center">Our Work</h1>
+                    <p class="text-center">Check out our past projects.</p>
+                </div>
+                <div class="col-12 col-lg-6 justify-content-center align-items-center d-flex">
                     <swiper
                     :effect="'cards'"
                     :grabCursor="true"
@@ -22,7 +26,10 @@
                                     <li>Vue.js Apointment Calandar</li>
                                     <li>Custom Web Design</li>
                                 </ul>
-                                <a href="">Check out the site!</a>
+                                <div class="link-tag">
+                                    <a href="">Check out the site!</a>
+                                </div>
+                             
                             </div>
                         </div>
                     </swiper-slide>
@@ -37,7 +44,10 @@
                                     <li>Vue.js Apointment Calandar</li>
                                     <li>Custom Web Design</li>
                                 </ul>
-                                <a href="">Check out the site!</a>
+                                <div class="link-tag">
+                                    <a href="">Check out the site!</a>
+                                </div>
+                    
                             </div>
                         </div>
                     </swiper-slide>
@@ -45,7 +55,6 @@
               
                   </swiper>
                 </div>
-                <div class="col-6"></div>
             </div>
             
             <!--<div class="row justify-content-center align-items-center">
@@ -91,15 +100,16 @@ export default {
 <style lang="scss" scoped>
 .container{
     margin-top: 7vh;
-    padding: 2em;
-    padding-right: 10em;
-    background: url('/src/assets/img/background.png');
+    width: 60%;
+    padding: 5em;
+    background: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
     color: black;
-    font-family: geo-light;
+    font-family: geo-medium;
+
 
     @media (max-width: 480px) {
         background: none;
@@ -116,8 +126,33 @@ ul{
 a{
     padding: 1em;
     text-decoration: none;
+    color: white;
+    font-family: geo-light;
+    font-weight: 500;
 }
 
+h1{
+    font-size: 5em;
+    font-family: geo-medium;
+    font-weight: 900;
+    
+    @media (max-width: 480px) {
+        color: white;    
+    }
+}
+
+p{
+    font-family: geo-light;
+    font-size: 1.2em;
+    @media (max-width: 480px) {
+        color: white;    
+    }
+}
+
+.link-tag{
+    background: black;
+    border-radius: 2px;
+}
 
 
 .img-brand{
@@ -138,14 +173,14 @@ a{
 }
 
 .deb{
-    width: 80%;
+    width: 70%;
     background-color: #5E0149;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    padding-bottom: 4em;
-    padding-top: 4em;
+    padding-bottom: 3em;
+    padding-top: 3em;
     @media (max-width: 480px) {
         margin-top: 1em;
         padding-top: 3em;
