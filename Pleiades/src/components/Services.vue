@@ -1,10 +1,10 @@
 <template>
-    <div class="row g-0 m-0">
+    <div class="row g-0 m-0" v-scrollanimation>
         <div class="col-12"><h1>Experts on the Web</h1></div>
     </div>
-    <div class="container about-section">
-        <div class="row justify-content-center align-items-center p-5">
-            <div class="col-12">
+    <div class="container about-section" v-scrollanimation>
+        <div class="row justify-content-center align-items-center p-5 " >
+            <div class="col-12" v-scrollanimation>
                 <div class="card-holder">
                      
                     <div class="text-wrapper">
@@ -15,7 +15,7 @@
                     <img class="image-icon d-none d-lg-flex" id="seo" src="../assets/img/custom-svg.svg" alt="">
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12" v-scrollanimation>
                 <div class="card-holder">
                     <img class="image-icon d-none d-lg-flex" id="seo" src="../assets/img/seo-svg.svg" alt="">
                     <div class="text-wrapper">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12" v-scrollanimation>
                 <div class="card-holder">
                     <div class="text-wrapper">
                         <b>Online  </b>
@@ -75,6 +75,17 @@ h1{
      }
 }
 
+@keyframes slideIn {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 .body-text{
     padding-top: 2.5vh;
 }
@@ -83,8 +94,20 @@ h1{
     background: white;
     border-radius: 25px;
     width: 95vw;
+
 }
 
+.before-enter {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: all 0.5s ease;
+  }
+  
+  .enter {
+    opacity: 1;
+    
+    transform: translateY(0);
+  }
 .card-holder{
     padding: 3em;
     border-radius: 25px;
@@ -118,11 +141,6 @@ h1{
 
 }
 
-
-
-#letter-circle-3{
-
-}
 
 .text-wrapper b{
     font-size: 3em;

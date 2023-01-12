@@ -1,27 +1,27 @@
 <template>
     <div class="container d-block d-lg-flex">
       
-    <div class="wrapper d-flex">
+    <div class="wrapper d-flex" v-scrollanimation>
             <div class="row justify-content-center align-items-center ">
-                <div class="col-12 text-center">  
-                    <div class="d-block">
+                <div class="col-12 text-center" v-scrollanimation>  
+                    <div class="d-block" >
                         <b>We</b>
                         <b class="dark-side">Use</b>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center "><img class="img-brand" src="https://www.positivethinking.tech/wp-content/uploads/2021/01/Logo-Vuejs.png" alt=""></div>
-                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center "><img class="img-brand" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_84fd5bd582809f20ff5682d2746ffa82/shopify.png" alt=""></div>
-                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center "><img class="img-brand" src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png" alt=""></div>
-                <div class="col-6 col-lg-12  d-flex justify-content-center align-items-center  "><img class="img-brand azure" src="https://www.dbcloudbin.com/wp-content/uploads/2019/07/azure_logo_794_new.png" alt=""></div>
+                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img class="img-brand" src="https://www.positivethinking.tech/wp-content/uploads/2021/01/Logo-Vuejs.png" alt=""></div>
+                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img class="img-brand" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_84fd5bd582809f20ff5682d2746ffa82/shopify.png" alt=""></div>
+                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img class="img-brand" src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png" alt=""></div>
+                <div class="col-6 col-lg-12  d-flex justify-content-center align-items-center  " v-scrollanimation><img class="img-brand azure" src="https://www.dbcloudbin.com/wp-content/uploads/2019/07/azure_logo_794_new.png" alt=""></div>
         
             </div>
         </div>
 
-        <div class="wrapper-2">
+        <div class="wrapper-2" v-scrollanimation>
             
                         <div class="row justify-content-between align-items-center">
-                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2">
+                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2" v-scrollanimation>
                                 <div class="d-md-flex">
                                     <b class="dark-side">Customized </b>
                                     <b>Experience</b>
@@ -29,7 +29,7 @@
                               
                                 <p class="body-text">At Pleiades, we specialize in creating custom websites for businesses and organizations of all sizes. We take pride in our ability to understand our clients' needs and goals, and use that understanding to craft visually stunning and highly functional websites. Our team of experienced designers and developers work closely with each client to ensure that their website is not only visually appealing, but also effectively communicates their brand and meets the needs of their target audience. Whether you need a simple brochure website or a complex e-commerce platform, we have the skills and expertise to bring your vision to life.</p>
                             </div>
-                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2">
+                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2" v-scrollanimation>
                                 <div class="d-md-flex">
                                     <b>Web </b>
                                     <b class="dark-side">Apps</b>
@@ -50,6 +50,19 @@
 </script>
 
 <style lang="scss" scoped>
+
+
+.before-enter {
+    opacity: 0;
+    transform: translatex(70%);
+    transition: all 0.5s ease;
+  }
+  
+  .enter {
+    opacity: 1;
+    transition-delay: 0.3s;
+    transform: translatex(0);
+  }
 
 .container{
     margin-top: 15vh;

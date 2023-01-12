@@ -4,7 +4,7 @@
             
           <a class="navbar-brand" href="#">Pleiades Projectworks</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="">contact</span>
+            <span class="">Get Started</span>
           </button>
           <div class="offcanvas offcanvas-end p-5" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         
@@ -16,7 +16,7 @@
                   <div class="col-12 contact-info justify-content-center align-items-center d-flex flex-column">
                     
                     <h5>Pleiades Projectworks LLC</h5>
-                    <p><b>Email: </b> austindye@pleiadesprojectworks.com </p>
+                    <p><b>Email: </b> info@pleiadesprojectworks.com </p>
                     <p>Monday - Friday</p>
                   </div>
                   <div class="col-12 contact-form d-flex justify-content-center align-items-center d-flex flex-column p-5">
@@ -93,6 +93,7 @@
         margin-left: 0;
         margin-right: 0;
         border-radius:0;
+   
   
      }
 
@@ -101,7 +102,12 @@
 
 .navbar-brand{
     padding: 1em;
-     
+    @media (max-width: 380px) {
+        font-size: 1em;
+        height: 40px;
+        width: 50%;
+   
+      }
  
     
 }
@@ -139,6 +145,8 @@
     
   }
 
+ 
+
   .button{
       background-color: rgb(0, 0, 0);
       box-shadow: none;
@@ -152,7 +160,7 @@
 
   textarea{
     width: 100%;
-    height: 30vh;
+    height: 60%;
  
 
       @media (max-width: 480px) {
@@ -164,6 +172,8 @@
 
   .offcanvas{
    border-radius: 25px;
+   max-height: 90vh;
+   
   }
 
   .btn-close{
@@ -185,6 +195,13 @@
     background: black;
     color: rgba(255, 255, 255, 0.702);
     border: solid rgba(255, 255, 255, 0.175) 2px;
+    @media (max-width: 380px) {
+        font-size: .8em;
+        height: 40px;
+        width: 30%;
+   
+      }
+   
 
 }
 </style>

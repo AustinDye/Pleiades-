@@ -1,14 +1,14 @@
 <template>
 
 
-        <div class="container">
+        <div class="container" v-scrollanimation>
   
             <div class="row">
-                <div class="col-12  justify-content-center align-items-center d-flex flex-column left-side">
+                <div class="col-12  justify-content-center align-items-center d-flex flex-column left-side" v-scrollanimation>
                     <h1 class="text-center">Our Work</h1>
                     <p class="text-center">Check out our past projects.</p>
                 </div>
-                <div class="col-12 justify-content-center align-items-center d-flex right-side py-5">
+                <div class="col-12 justify-content-center align-items-center d-flex right-side py-5" v-scrollanimation>
                     <swiper
                     :spaceBetween="30"
                     :pagination="{
@@ -100,6 +100,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.before-enter {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: all 0.5s ease;
+  }
+  
+  .enter {
+    opacity: 1;
+    transition-delay: 0.1s;
+    transform: translateY(0);
+  }
 .container{
     margin-top: 15vh;
     background-size: cover;
@@ -175,6 +187,7 @@ p{
 .link-tag{
     background: white;
     border-radius: 2px;
+    
 }
 
 

@@ -1,7 +1,7 @@
 <template>
   
     <div class="eclipse">
-        <img src="../assets/img/logo.svg" alt="">
+        <img id="logo" src="../assets/img/logo.svg" alt="">
         <div id="moon" class="space-circle"></div>
         <div id="moon2" class="space-circle-2 "></div>
       </div>
@@ -14,11 +14,13 @@
 
             let moon1 = document.getElementById('moon');
             let moon2 = document.getElementById('moon2');
+            let logo = document.getElementById('logo');
 
             window.addEventListener('scroll', function(e) {
                 let scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
                 moon1.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 1));
+                logo.style.opacity = Math.max(0, Math.min(1, -scroll / 300 + 1));
             
                 moon2.style.marginTop = scroll.toString() +  'px';
             });
@@ -43,13 +45,17 @@
     transition: all 1000ms;
     transition: margin 200ms;
 
+   
     @media (max-width: 480px) {
-      left: 12vh;
-      top: 54vh;
-      width: 24vh; 
-      height: 24vh; 
-      transform:none;
-    }
+        top: 50%;
+        left: 50%;
+        width: 35vh; 
+        height: 35vh; 
+        transition: all 1000ms;
+        transition: margin 200ms;
+       
+        transform: translate(-50%, -50%);
+      }
       
     /* Media Query for low resolution  Tablets, Ipads */
     @media (min-width: 481px) and (max-width: 767px) {
@@ -70,7 +76,9 @@
     }
 }
 .space-circle-2 {
-    background-color: #241e3e;
+    background-color: black;
+    transition: all 1000ms;
+    transition: margin 200ms;
 }
 
 
@@ -91,13 +99,16 @@
     transition: all .5s;
     width: 25%;
  
+    
+
     @media (max-width: 480px) {
-        left:6vh;
-        top: 24vh;
-        width: 36vh;
-        transform:none;
-        
-    }
+        top: 50%;
+        left: 50%;
+        width: 30vh; 
+        height: 30vh; 
+       
+        transform: translate(-50%, -50%);
+      }
 
      /* Media Query for Tablets Ipads portrait mode */
      @media (min-width: 768px) and (max-width: 1024px){

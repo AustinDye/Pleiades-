@@ -1,15 +1,15 @@
 <template>
-    <div class="row g-0 m-0">
+    <div class="row g-0 m-0" v-scrollanimation>
         <div class="col-12"><h1>contact us today</h1></div>
     </div>
-    <div class="container justify-content-center align-items-center d-flex">
+    <div class="container justify-content-center align-items-center d-flex" v-scrollanimation>
       <div class="row justify-content-center align-items-center">
-        <div class="col-6 contact-info justify-content-center align-items-center d-flex flex-column">
+        <div class="col-6 contact-info justify-content-center align-items-center d-flex flex-column" v-scrollanimation>
           <h5>Pleiades Projectworks LLC</h5>
-          <p><b>Email: </b> austindye@pleiadesprojectworks.com </p>
+          <p><b>Email: </b> info@pleiadesprojectworks.com </p>
           <p>Monday - Friday</p>
         </div>
-        <div class="col-6 contact-form d-flex justify-content-center align-items-center d-flex flex-column p-5">
+        <div class="col-6 contact-form d-flex  justify-content-center align-items-center d-flex flex-column p-5" v-scrollanimation>
      
             <form
             class=""
@@ -18,7 +18,7 @@
               method="POST"
               target="_blank"
             >
-              <div class="">
+              <div class="d-block d-md-flex justify-content-center align-items-center">
                 <input type="text" placeholder="Your name" name="name" required />
                 <input type="email" placeholder="Email" name="email" required />
               </div>
@@ -63,6 +63,18 @@
   </script>
 
   <style scoped lang="scss">
+
+  .before-enter {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 0.5s ease;
+  }
+  
+  .enter {
+    opacity: 1;
+    transition-delay: 0.1s;
+    transform: translateX(0);
+  }
     .container{
         
      
@@ -110,7 +122,7 @@
 
     input{
         padding: .5em;
-        margin-left:2.5em;
+    
        
         
         
