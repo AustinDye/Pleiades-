@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row g-0 m-0">
         <div class="col-12"><h1>contact us today</h1></div>
     </div>
     <div class="container justify-content-center align-items-center d-flex">
@@ -88,12 +88,12 @@
     
         @media (max-width: 480px) {
            font-size: 5em;
-            
+           margin-bottom: 15vh;
         }
     
          /* Media Query for Tablets Ipads portrait mode */
          @media (min-width: 768px) and (max-width: 1024px){
-          
+   
             font-size: 7em;
         }
       

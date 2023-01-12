@@ -44,5 +44,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-attachment: fixed;
-  overflow-x: hidden;
+  overflow-x:hidden;
+  
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row g-0 m-0">
         <div class="col-12"><h1>Experts on the Web</h1></div>
     </div>
     <div class="container about-section">
@@ -67,9 +67,18 @@ h1{
   
 }
 
+.container{
+    width: 100%;
+    @media (max-width: 480px) {
+        padding: 0;
+  
+     }
+}
+
 .about-section{
     background: white;
     border-radius: 25px;
+    width: 95vw;
 }
 
 .card-holder{
@@ -81,7 +90,7 @@ h1{
         padding: 0;
   
      }
-    
+     width: 100%;
 }
 
 .dark-side{
@@ -97,6 +106,10 @@ h1{
   font-family: geo-medium;
   height: 100%;
   padding: 1em;
+  @media (max-width: 480px) {
+    padding: 0;
+
+ }
 
 
 }

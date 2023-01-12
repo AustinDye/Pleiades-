@@ -19,11 +19,9 @@
         </div>
 
         <div class="wrapper-2">
-            <div class="row flex-column justify-contnet-center align-items-center">
-                <div class="about-section d-flex">
-                 
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+            
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2">
                                 <div class="d-md-flex">
                                     <b class="dark-side">Customized </b>
                                     <b>Experience</b>
@@ -31,7 +29,7 @@
                               
                                 <p>At Pleiades, we specialize in creating custom websites for businesses and organizations of all sizes. We take pride in our ability to understand our clients' needs and goals, and use that understanding to craft visually stunning and highly functional websites. Our team of experienced designers and developers work closely with each client to ensure that their website is not only visually appealing, but also effectively communicates their brand and meets the needs of their target audience. Whether you need a simple brochure website or a complex e-commerce platform, we have the skills and expertise to bring your vision to life.</p>
                             </div>
-                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2">
                                 <div class="d-md-flex">
                                     <b>Customized </b>
                                     <b class="dark-side">Experience </b>
@@ -39,12 +37,8 @@
                                 <p>At Pleiades, we specialize in creating custom websites for businesses and organizations of all sizes. We take pride in our ability to understand our clients' needs and goals, and use that understanding to craft visually stunning and highly functional websites. Our team of experienced designers and developers work closely with each client to ensure that their website is not only visually appealing, but also effectively communicates their brand and meets the needs of their target audience. Whether you need a simple brochure website or a complex e-commerce platform, we have the skills and expertise to bring your vision to life.</p>
                             </div>
                         </div>
-                
-                </div>
-            </div>
         </div>
        
-        
     </div>
    
 </template>
@@ -59,6 +53,7 @@
 
 .container{
     margin-top: 15vh;
+       width: 100%;
 }
 
 b{
@@ -84,7 +79,7 @@ p{
 
 .wrapper{
   
-    width: 35%;
+    
     padding: 10em;
     height: 100vh;
     background-color: rgb(255, 255, 255);
@@ -107,13 +102,15 @@ p{
     background-color: rgb(255, 255, 255);
     display: flex;
     align-self: center;
+    justify-content: center;
+    align-items: center;
     border-radius:0px 25px 25px 0px;
     height: 100vh;
     @media (max-width: 900px) {
         height: auto;
         border-radius: 25px;
         margin-top: 15vh;
-            
+        padding: 2.5em;
        }
 }
 
