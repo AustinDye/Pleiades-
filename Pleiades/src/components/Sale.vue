@@ -31,10 +31,10 @@
                             </div>
                             <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2">
                                 <div class="d-md-flex">
-                                    <b>Customized </b>
-                                    <b class="dark-side">Experience </b>
+                                    <b>Web </b>
+                                    <b class="dark-side">Apps</b>
                                 </div>
-                                <p>At Pleiades, we specialize in creating custom websites for businesses and organizations of all sizes. We take pride in our ability to understand our clients' needs and goals, and use that understanding to craft visually stunning and highly functional websites. Our team of experienced designers and developers work closely with each client to ensure that their website is not only visually appealing, but also effectively communicates their brand and meets the needs of their target audience. Whether you need a simple brochure website or a complex e-commerce platform, we have the skills and expertise to bring your vision to life.</p>
+                                <p>Our web application development services include custom web app development, e-commerce applications, content management systems (CMS) and business automation. With custom web app development, our team will work closely with you to understand your business needs and create a custom web application that streamlines your operations and improves productivity. </p>
                             </div>
                         </div>
         </div>

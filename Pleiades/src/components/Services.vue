@@ -10,7 +10,7 @@
                     <div class="text-wrapper">
                         <b >Digital  </b>
                         <b class="dark-side">Experiences</b>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor iure saepe obcaecati accusamus, vel assumenda explicabo voluptas recusandae, quidem amet magni laudantium quam laboriosam. Eveniet maiores alias nemo soluta!</p>
+                        <p>Pleiades Projectworks is a web development company that specializes in creating custom digital experiences for our clients. We understand that every business is unique and that's why our approach is centered around creating custom designs that reflect your brand and message. Our team of expert designers and developers are well-versed in using the latest front-end technologies such as Vue.js, Shopify, and Wordpress to bring your vision to life.</p>
                     </div>
                     <img class="image-icon d-none d-lg-flex" id="seo" src="../assets/img/custom-svg.svg" alt="">
                 </div>
@@ -20,7 +20,7 @@
                     <img class="image-icon d-none d-lg-flex" id="seo" src="../assets/img/seo-svg.svg" alt="">
                     <div class="text-wrapper">
                         <b>Ecommerce </b>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor iure saepe obcaecati accusamus, vel assumenda explicabo voluptas recusandae, quidem amet magni laudantium quam laboriosam. Eveniet maiores alias nemo soluta!</p>
+                        <p>Our approach is centered around creating a seamless shopping experience for your customers, from browsing to checkout. We take into consideration factors such as user experience, website speed, and mobile responsiveness to ensure that your customers have a positive experience when shopping on your website. Our team also provides ongoing support and maintenance to ensure that your store is always running smoothly. Trust Pleiades Projectworks to create a custom ecommerce platform that will help you take your business to the next level.</p>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                     <div class="text-wrapper">
                         <b>Online  </b>
                         <b class="dark-side">Presence</b>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor iure saepe obcaecati accusamus, vel assumenda explicabo voluptas recusandae, quidem amet magni laudantium quam laboriosam. Eveniet maiores alias nemo soluta!</p>
+                        <p>We work with our clients to create a comprehensive SEO strategy that not only helps increase visibility but also drive targeted traffic to their website. Trust Pleiades Projectworks for all your web development needs and let us help you take your online presence to the next level through our SEO services</p>
                     </div>
                     <img class="image-icon d-none d-lg-flex" id="fullstack" src="../assets/img/coding.svg" alt="">
                 </div>
