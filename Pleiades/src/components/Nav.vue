@@ -77,14 +77,15 @@
 
 <style lang="scss" scoped>
 .navbar{
-    margin-top: 5vh;
+    margin-top: 85vh;
     width: 30%;
     background-color: black;
     margin-left: 35%;
     margin-right: 35%;
-    border-radius:25px;
+    border-radius:60px;
     font-family: geo-light;
     font-weight: 900;
+    outline: .1em solid rgba(255, 255, 255, 0.302);
 
     @media (max-width: 820px) {
 
@@ -93,6 +94,7 @@
         margin-left: 0;
         margin-right: 0;
         border-radius:0;
+        outline: none;
    
   
      }
@@ -187,7 +189,7 @@
   }
 
   .navbar-toggler{
-    border-radius: 25px;
+    border-radius:60px;
     width: 30%;
     height: 60px;
     font-size: 1em;
