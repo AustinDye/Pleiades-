@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-dark  fixed-top">
+    <nav id="nav" class="navbar navbar-dark  fixed-top">
         <div class="container-fluid ">
             
           <a class="navbar-brand" href="#">Pleiades Projectworks</a>
@@ -58,12 +58,36 @@
 </template>
 
 <script>
+
+
      export default {
     name: "App",
     data: () => ({
       submitted: false,
       FORM_ENDPOINT: "https://public.herotofu.com/v1/35805ee0-912b-11ed-a003-6f0b76086b1c",
     }),
+
+    mounted() {
+
+        let nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', function(e) {
+            let scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            if(scroll > 400){
+                nav.style.opacity = 1;
+            }
+            else {
+                nav.style.opacity = 0;
+            }
+
+       
+
+           
+        });
+
+        },
+    
   
     methods: {
       handleSubmit() {
@@ -76,6 +100,10 @@
 </script>
 
 <style lang="scss" scoped>
+
+#nav{
+    opacity: 0;
+}
 .navbar{
     margin-top: 85vh;
     width: 30%;
@@ -86,6 +114,8 @@
     font-family: geo-light;
     font-weight: 900;
     outline: .1em solid rgba(255, 255, 255, 0.302);
+    transition: all 500ms;
+    
 
     @media (max-width: 820px) {
 
