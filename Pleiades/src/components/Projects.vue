@@ -8,7 +8,7 @@
                     <h1 class="text-center">Our Work</h1>
                     <p class="text-center">Check out our past projects.</p>
                 </div>
-                <div class="col-12 justify-content-center align-items-center d-flex right-side">
+                <div class="col-12 justify-content-center align-items-center d-flex right-side py-5">
                     <swiper
                     :spaceBetween="30"
                     :pagination="{

@@ -9,7 +9,7 @@
           <p><b>Email: </b> austindye@pleiadesprojectworks.com </p>
           <p>Monday - Friday</p>
         </div>
-        <div class="col-6 contact-form d-flex">
+        <div class="col-6 contact-form d-flex justify-content-center align-items-center d-flex flex-column p-5">
      
             <form
             class=""
@@ -92,10 +92,7 @@
         }
     
          /* Media Query for Tablets Ipads portrait mode */
-         @media (min-width: 768px) and (max-width: 1024px){
-   
-            font-size: 7em;
-        }
+       
       
     }
 
@@ -123,9 +120,10 @@
     .contact-form{
       background-color: white;
       padding: 2em;
-      width:42vw;
+      width: 50%;
+      height: 65vh;
       border-radius: 0px 25px 25px 0px;
-       @media (max-width: 900px) {
+       @media (max-width: 500px) {
         height: 100%;
         width: 100%;
         border-radius: 0px 0px 25px 25px;
@@ -137,17 +135,18 @@
 
     .contact-info{
       background-color: black;
-      width:42vw;
-      height: 60vh;
+   
+      height: 65vh;
       border-radius: 25px 0px 0px 25px;
       @media (max-width: 480px) {
+        height: 100%;
         width: 100%;
         padding: 2em;
+        
   
      }
-     @media (max-width: 900px) {
-      height: 100%;
-      width: 100%;
+     @media (max-width: 500px) {
+     
       border-radius: 25px 25px 0px 0px;
    
      }
@@ -166,8 +165,8 @@
     }
 
     textarea{
-        height: 40vh;
-        width: 30vw;
+        height: 30vh;
+        width: 20vw;
         margin: 1em;
 
         @media (max-width: 480px) {
