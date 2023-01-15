@@ -1,9 +1,9 @@
 <template>
     <div class="container d-block d-lg-flex">
       
-    <div class="wrapper d-flex" v-scrollanimation>
+    <div class="wrapper d-flex" >
             <div class="row justify-content-center align-items-center ">
-                <div class="col-12 text-center" v-scrollanimation>  
+                <div class="col-12 text-center" >  
                     <div class="d-block" >
                         <b>We</b>
                         <b class="dark-side">Use</b>
@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <div class="wrapper-2" v-scrollanimation>
+        <div class="wrapper-2">
             
                         <div class="row justify-content-between align-items-center">
                             <div class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2" v-scrollanimation>

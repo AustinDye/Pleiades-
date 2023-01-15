@@ -31,14 +31,12 @@
                         <div class="">
                           <input class="p-1 m-1" type="text" placeholder="Your name" name="name" required />
                           <input class="p-1 m-1 mb-2 " type="email" placeholder="Email" name="email" required />
-                        </div>
-                
-                        <div class="d-flex flex-column justify-content-center align-items-center">
                           <textarea placeholder="Your message" name="message" required />
                           
-                            <button class="button" type="submit">Send us a message</button>
-                         
+                          <button class="button" type="submit">Send us a message</button>
                         </div>
+                
+                     
                        
                        
                       </form>
@@ -105,11 +103,11 @@
     opacity: 0;
 }
 .navbar{
-    margin-top: 85vh;
-    width: 30%;
     background-color: black;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin:  auto;
+    margin-top: 2vh;
+    width: 40%;
+
     border-radius:60px;
     font-family: geo-light;
     font-weight: 900;
@@ -125,8 +123,7 @@
         margin-right: 0;
         border-radius:0;
         outline: none;
-   
-  
+       
      }
 
   
@@ -134,6 +131,7 @@
 
 .navbar-brand{
     padding: 1em;
+    
     @media (max-width: 380px) {
         font-size: 1em;
         height: 40px;
@@ -188,11 +186,15 @@
       width: 100%;
       padding: .5em;
       color: white;
+
+    
+
+      
   }
 
   textarea{
     width: 100%;
-    height: 60%;
+    height: 25vh;
  
 
       @media (max-width: 480px) {
@@ -204,7 +206,7 @@
 
   .offcanvas{
    border-radius: 25px;
-   max-height: 90vh;
+   max-height: 100vh;
    
   }
 
@@ -226,7 +228,9 @@
     font-family: geo-light;
     background: black;
     color: rgba(255, 255, 255, 0.702);
-    border: solid rgba(255, 255, 255, 0.175) 2px;
+    transition: all .5s;
+    
+    
     @media (max-width: 380px) {
         font-size: .8em;
         height: 40px;
@@ -235,5 +239,9 @@
       }
    
 
+}
+
+.navbar-toggler:hover{
+    border: rgba(255, 255, 255, 0.445) solid .2em;
 }
 </style>

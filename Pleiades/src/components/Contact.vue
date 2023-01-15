@@ -18,18 +18,19 @@
               method="POST"
               target="_blank"
             >
-              <div class="d-block d-md-flex justify-content-center align-items-center">
+              <div class="">
                 <input type="text" placeholder="Your name" name="name" required />
                 <input type="email" placeholder="Email" name="email" required />
+                <textarea placeholder="Your message" name="message" required />
               </div>
       
-              <div class="d-flex flex-column justify-content-center align-items-center">
-                <textarea placeholder="Your message" name="message" required />
+            
+       
                 
-                  <button type="submit">Send us a message</button>
+                  
                
-              </div>
-             
+          
+              <button type="submit">Send us a message</button>
              
             </form>
         
@@ -178,12 +179,13 @@
 
     textarea{
         height: 30vh;
-        width: 20vw;
-        margin: 1em;
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
 
         @media (max-width: 480px) {
-            width: 80%;
-            margin: 1em;
+            width:100%;
+    
           
          }
     }
