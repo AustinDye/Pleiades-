@@ -17,7 +17,7 @@
             </div>
             <div class="col-12" v-scrollanimation>
                 <div class="card-holder">
-                    <img class="image-icon" id="seo" src="../assets/img/seo.png" alt="">
+                    <img class="image-icon d-none d-lg-flex" id="seo" src="../assets/img/seo.png" alt="">
                     <div class="text-wrapper">
                         <b>Ecommerce </b>
                         <p class="body-text">Our approach is centered around creating a seamless shopping experience for your customers, from browsing to checkout. We take into consideration factors such as user experience, website speed, and mobile responsiveness to ensure that your customers have a positive experience when shopping on your website. Our team also provides ongoing support and maintenance to ensure that your store is always running smoothly. Trust Pleiades Projectworks to create a custom ecommerce platform that will help you take your business to the next level.</p>
