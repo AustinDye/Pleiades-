@@ -10,10 +10,10 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img class="img-brand" src="https://www.positivethinking.tech/wp-content/uploads/2021/01/Logo-Vuejs.png" alt=""></div>
-                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img class="img-brand" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_84fd5bd582809f20ff5682d2746ffa82/shopify.png" alt=""></div>
-                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img class="img-brand" src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png" alt=""></div>
-                <div class="col-6 col-lg-12  d-flex justify-content-center align-items-center  " v-scrollanimation><img class="img-brand azure" src="https://www.dbcloudbin.com/wp-content/uploads/2019/07/azure_logo_794_new.png" alt=""></div>
+                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img  loading="lazy" class="img-brand" src="../assets/img/vue.png" alt=""></div>
+                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img  loading="lazy" class="img-brand" src="../assets/img/shopify.png" alt=""></div>
+                <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center " v-scrollanimation><img  loading="lazy" class="img-brand" src="../assets/img/wordpress.png" alt=""></div>
+                <div class="col-6 col-lg-12  d-flex justify-content-center align-items-center  " v-scrollanimation><img  loading="lazy" class="img-brand azure" src="../assets/img/azure.png" alt=""></div>
         
             </div>
         </div>

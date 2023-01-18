@@ -6,9 +6,9 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="">Get Started</span>
           </button>
-          <div class="offcanvas offcanvas-end p-5" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas d-flex justify-content-center align-items-center offcanvas-end p-5" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         
-            <button type="button" class="btn-close d-flex justify-content-center align-items-center mb-5 p-3" data-bs-dismiss="offcanvas" aria-label="Close">close</button>
+            <button type="button" class="btn-close d-flex justify-content-center align-items-center mb-5" data-bs-dismiss="offcanvas" aria-label="Close">close</button>
             <div class="container justify-content-center align-items-center d-flex">
                 
                 <div class="row justify-content-center align-items-center">
@@ -30,8 +30,8 @@
                       >
                         <div class="">
                           <input class="p-1 m-1" type="text" placeholder="Your name" name="name" required />
-                          <input class="p-1 m-1 mb-2 " type="email" placeholder="Email" name="email" required />
-                          <textarea placeholder="Your message" name="message" required />
+                          <input class="p-1 m-1 " type="email" placeholder="Email" name="email" required />
+                          <textarea class="p-1 m-1" placeholder="Your message" name="message" required />
                           
                           <button class="button" type="submit">Send us a message</button>
                         </div>
@@ -178,14 +178,21 @@
  
 
   .button{
-      background-color: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      black 0%,
+      black 50%,
+      rgba(251, 7, 217, 1) 75%,
+      rgba(255, 0, 0, 1) 100%
+    );
       box-shadow: none;
       border: none;
       outline: none;
-      margin-top:5vh;
+      margin-top:1vh;
       width: 100%;
       padding: .5em;
       color: white;
+      border-radius: 25px;
 
     
 
@@ -211,12 +218,14 @@
   }
 
   .btn-close{
+    background: none;
     background-color: black;
-    background: black;
+    opacity: 1;
     color: white;
     font-size: 1.2em;
-    border-radius: 2px;
-    width: 3em;
+    border-radius: 25px;
+    padding: .5em;
+    width: 60%;
     
   }
 
@@ -226,8 +235,8 @@
     height: 60px;
     font-size: 1em;
     font-family: geo-light;
-    background: black;
-    color: rgba(255, 255, 255, 0.702);
+    background:#0F1E32;
+    color: rgb(255, 255, 255);
     transition: all .5s;
     
     

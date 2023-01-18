@@ -1,5 +1,5 @@
 <template>
-    <div class="row g-0 m-0" v-scrollanimation>
+    <div id="contact" class="row g-0 m-0" v-scrollanimation>
         <div class="col-12"><h1>contact us today</h1></div>
     </div>
     <div class="container justify-content-center align-items-center d-flex" v-scrollanimation>
@@ -167,14 +167,26 @@
     }
 
     button{
-        background-color: rgb(0, 0, 0);
-      
+        background: linear-gradient(
+          90deg,
+          black 0%,
+          black 50%,
+          rgba(251, 7, 217, 1) 75%,
+          rgba(255, 0, 0, 1) 100%
+      );
+        border-radius: 25px;
         box-shadow: none;
         border: none;
         outline: none;
         width: 50%;
         padding: .5em;
         color: white;
+        transition: all 1s;
+    }
+
+    button:hover{
+      background: black;
+    transition: all 1s;
     }
 
     textarea{

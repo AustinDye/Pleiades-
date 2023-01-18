@@ -1,7 +1,7 @@
 <template>
   
     <div class="eclipse">
-        <img id="logo" src="../assets/img/logo.svg" alt="">
+        <img id="logo" src="../assets/img/logo1.svg" alt="">
         <div id="moon" class="space-circle"></div>
         <div id="moon2" class="space-circle-2 "></div>
       </div>
