@@ -238,7 +238,7 @@
     background:#0F1E32;
     color: rgb(255, 255, 255);
     transition: all .5s;
-    
+  
     
     @media (max-width: 380px) {
         font-size: .8em;
@@ -251,6 +251,15 @@
 }
 
 .navbar-toggler:hover{
-    border: rgba(255, 255, 255, 0.445) solid .2em;
+    border: rgba(255, 255, 255, 0.445) solid .1em;
 }
+
+.navbar-toggler:active{
+  border: rgba(255, 255, 255, 0.445) solid .1em;
+}
+
+.navbar-toggler:visited{
+  border: rgba(255, 255, 255, 0.445) solid .1em;
+}
+
 </style>
