@@ -3,7 +3,7 @@
         <div class="col-12"><h1>contact us today</h1></div>
     </div>
     <div class="container justify-content-center align-items-center d-flex" v-scrollanimation>
-      <div class="row justify-content-center align-items-center">
+      <div class="row ">
         <div class="col-6 contact-info justify-content-center align-items-center d-flex flex-column" v-scrollanimation>
           <h5>Pleiades Projectworks LLC</h5>
           <p><b>Email: </b> info@pleiadesprojectworks.com </p>
@@ -83,6 +83,7 @@
         height: 65vh;
         border-radius: 25px;
         margin-bottom: 7vh;
+        
 
         @media (max-width: 480px) {
             width: 90%;
@@ -93,6 +94,7 @@
 
     h1{
         margin-top: 7vh;
+        margin-bottom: 7vh;
         color: white;
         font-size: 8em;
         font-family: geo-medium;
@@ -200,5 +202,9 @@
     
           
          }
+    }
+
+    .row{
+      width: 100vw;
     }
   </style>
