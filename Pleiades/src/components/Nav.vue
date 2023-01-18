@@ -1,8 +1,11 @@
 <template>
-    <nav id="nav" class="navbar navbar-dark  fixed-top">
+    <nav id="nav" class="navbar navbar-dark fixed-top">
         <div class="container-fluid ">
             
-          <a class="navbar-brand" href="#">Pleiades Projectworks</a>
+          <img href="#" class="navbar-brand" src="../assets/img/logo-top.svg" alt="">
+          <a href="">Services</a>
+          <a href="">Why Choose Us?</a>
+          <a href="">Our Work</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="">Get Started</span>
           </button>
@@ -106,9 +109,7 @@
     background-color: black;
     margin:  auto;
     margin-top: 2vh;
-    width: 40%;
 
-    border-radius:60px;
     font-family: geo-light;
     font-weight: 900;
     outline: .1em solid rgba(255, 255, 255, 0.302);
@@ -128,9 +129,26 @@
 
   
 }
+a{
+  font-family: geo-light;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.713);
+  text-decoration: none;
+  transition: .5s ;
+  
+}
+
+a:hover{
+  color: white;
+  border-bottom: 1px white solid;
+  font-size: 1.4em;
+}
 
 .navbar-brand{
     padding: 1em;
+    height: 20%;
+    width: 20%;
     
     @media (max-width: 380px) {
         font-size: 1em;
@@ -226,16 +244,17 @@
     border-radius: 25px;
     padding: .5em;
     width: 60%;
+    height: 90vh;
     
   }
 
   .navbar-toggler{
     border-radius:60px;
-    width: 30%;
-    height: 60px;
-    font-size: 1em;
+    padding: .5em;
+    margin-right: 5vw;
+    font-size: 1.4em;
     font-family: geo-light;
-    background:#0F1E32;
+    background:none;
     color: rgb(255, 255, 255);
     transition: all .5s;
   

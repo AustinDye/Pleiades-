@@ -1,7 +1,7 @@
 <template>
   
     <div class="eclipse">
-        <img id="logo" src="../assets/img/logo1.svg" alt="">
+        <img id="logo" src="../assets/img/newlogosvg.svg" alt="">
         <div id="moon" class="space-circle"></div>
         <div id="moon2" class="space-circle-2 "></div>
       </div>
@@ -98,14 +98,15 @@
     z-index: 2;
     transition: all .5s;
     width: 25%;
+    border-radius: 25px;
  
     
 
     @media (max-width: 480px) {
         top: 50%;
         left: 50%;
-        width: 30vh; 
-        height: 30vh; 
+        width: 50%; 
+      
        
         transform: translate(-50%, -50%);
       }
