@@ -2,10 +2,10 @@
     <nav id="nav" class="navbar navbar-dark fixed-top">
         <div class="container-fluid ">
             
-          <img href="#" class="navbar-brand" src="../assets/img/logo-top.svg" alt="">
-          <a href="">Services</a>
-          <a href="">Why Choose Us?</a>
-          <a href="">Our Work</a>
+          <img class="navbar-brand" src="../assets/img/logo-top.svg" alt="">
+          <a id="serv-link" class="d-none d-md-flex" href="#services">Services</a>
+          <a id="why-link" class="d-none d-md-flex" href="#whyus">Why Choose Us?</a>
+          <a id="work-link" class="d-none d-md-flex" href="#works">Our Work</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="">Get Started</span>
           </button>
@@ -71,16 +71,34 @@
     mounted() {
 
         let nav = document.getElementById('nav');
+        let serv = document.getElementById('serv-link');
+        let why = document.getElementById('why-link');
+        let work = document.getElementById('work-link');
+        
 
         window.addEventListener('scroll', function(e) {
             let scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-            if(scroll > 400){
+            if(scroll > 400 && scroll < 1000){
                 nav.style.opacity = 1;
+                window.history.pushState("object or string", "Title", "/#services");
             }
-            else {
-                nav.style.opacity = 0;
+
+            if(scroll > 2800 && scroll < 3600){
+                window.history.pushState("object or string", "Title", "/#whyus");
+              
             }
+
+            if(scroll > 3600 && scroll < 4000){
+                window.history.pushState("object or string", "Title", "/#works");
+                
+            }
+
+            if(scroll > 4000){
+                window.history.pushState("object or string", "Title", "/#contact");
+               
+            }
+            
 
        
 
@@ -105,10 +123,12 @@
 #nav{
     opacity: 0;
 }
+
+
 .navbar{
     background-color: black;
     margin:  auto;
-    margin-top: 2vh;
+  
 
     font-family: geo-light;
     font-weight: 900;
@@ -151,8 +171,8 @@ a:hover{
     width: 20%;
     
     @media (max-width: 380px) {
-        font-size: 1em;
-        height: 40px;
+    
+        height: 50%;
         width: 50%;
    
       }
