@@ -31,7 +31,7 @@
                                     <li>Custom Web Design</li>
                                 </ul>
                                 <div class="link-tag">
-                                    <a href="">Check out the site!</a>
+                                    <a href="https://portschesfinejewelry.com/">Check out the site!</a>
                                 </div>
                              
                             </div>
@@ -178,10 +178,13 @@ export default {
     border-radius: 25px;
     color: black;
     font-family: geo-medium;
-    width: 100%;
+    width: 95%;
+   
 
     @media (max-width: 480px) {
         background: none;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
        }
 }
 

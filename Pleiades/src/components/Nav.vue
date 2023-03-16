@@ -239,19 +239,27 @@ a:hover{
 
   textarea{
     width: 100%;
-    height: 25vh;
+    height: 15vh;
  
 
       @media (max-width: 480px) {
-          width: 80%;
-          margin: 1em;
+          width: 100%;
+  
         
        }
   }
 
   .offcanvas{
    border-radius: 25px;
-   max-height: 100vh;
+   max-height: 90vh;
+   margin-top: 10vh;
+
+   @media (max-width: 280px) {
+    border-radius: 0;
+    max-height: 100vh;
+    margin-top:0;
+
+  }
    
   }
 
@@ -263,12 +271,21 @@ a:hover{
     font-size: 1.2em;
     border-radius: 25px;
     padding: .5em;
-    width: 60%;
-    height: 90vh;
+    width: 100%;
+    margin-top: 10vh;
+
+    @media (max-width: 280px) {
+      width: 100%;
+    
+    }
+
+    
     
   }
 
   .navbar-toggler{
+    border: none;
+    
     border-radius:60px;
     padding: .5em;
     margin-right: 5vw;

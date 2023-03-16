@@ -66,7 +66,7 @@
 
 .container{
     margin-top: 15vh;
-       width: 100%;
+    
 }
 
 b{
@@ -76,6 +76,11 @@ b{
     z-index: 2;
     padding: .2em;
     text-align: center;
+
+    @media (max-width: 280px) {
+       
+        font-size: 2em;
+       }
 }
 .dark-side{
     background-color: black;
@@ -88,6 +93,11 @@ b{
 p{
     font-family: geo-light;
     font-size: 1.2em;
+
+    @media (max-width: 280px) {
+       
+        font-size: 1em;
+       }
 }
 
 .wrapper{
@@ -125,10 +135,16 @@ p{
         margin-top: 15vh;
         padding: 2.5em;
        }
+
+      
 }
 
 .wrapper-2 h2 {
     font-size: 3em;
+
+    @media (max-width: 280px) {
+        font-size: 1em;
+       }
 }
 .img-brand{
     display: flex;

@@ -68,7 +68,7 @@ h1{
 }
 
 .container{
-    width: 100%;
+    
     @media (max-width: 480px) {
         padding: 0;
   
@@ -147,12 +147,22 @@ h1{
     font-family: geo-medium;
     position: relative;
 
+    @media (max-width: 280px) {
+       
+        font-size: 2em;
+       }
+
    
 }
 
 .text-wrapper p {
     font-size: 1.2em;
     font-family: geo-light;
+
+    @media (max-width: 280px) {
+       
+        font-size: 1em;
+       }
 }
 
 img {

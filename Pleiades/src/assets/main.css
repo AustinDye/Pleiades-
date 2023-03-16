@@ -25,8 +25,17 @@
   color: #fff;
   background-color: black;
   outline: 1px solid rgba(0, 0, 0, 0.241);
+  
  
 }
+
+@media (max-width: 380px) {
+  .swiper-slide{
+    justify-content: initial;
+    align-items: initial;
+  }
+ 
+ }
 
 @media (max-width: 480px) {
   .swiper{
@@ -34,8 +43,17 @@
     height: 65vh;
 
   }
+
+ 
   
  
+}
+
+@media (max-width:280px) {
+  .swiper{
+    height: 75vh;
+
+  }
 }
 
 .swiper-pagination-bullet{

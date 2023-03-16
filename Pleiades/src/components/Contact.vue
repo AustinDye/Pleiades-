@@ -1,5 +1,5 @@
 <template>
-    <div id="contact" class="row g-0 m-0" v-scrollanimation>
+    <div id="contact" class="row g-0" v-scrollanimation>
         <div class="col-12"><h1>contact us today</h1></div>
     </div>
     <div class="container justify-content-center align-items-center d-flex" v-scrollanimation>
@@ -23,13 +23,6 @@
                 <input type="email" placeholder="Email" name="email" required />
                 <textarea placeholder="Your message" name="message" required />
               </div>
-      
-            
-       
-                
-                  
-               
-          
               <button type="submit">Send us a message</button>
              
             </form>
@@ -132,6 +125,14 @@
   
     }
 
+    #contact h1{
+      @media (max-width: 300px) {
+       
+        font-size: 5em;
+        margin-bottom: 38.5vh;
+       }
+    }
+
     .contact-form{
       background-color: white;
       padding: 2em;
@@ -206,5 +207,11 @@
 
     .row{
       width: 100vw;
+    }
+
+    @media (max-width: 380px){
+      #contact{
+        margin-bottom: 5em;
+      }
     }
   </style>
