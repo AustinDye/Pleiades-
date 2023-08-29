@@ -1,6 +1,51 @@
 @import './base.css';
 
 @font-face {
+  font-family: alata;
+  src: url(Alata-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-slab;
+  src: url(RobotoSlab-VariableFont_wght.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+b,
+span {
+  font-family: alata;
+  margin: 0;
+}
+
+.button {
+  background: linear-gradient(90deg,
+      black 0%,
+      black 50%,
+      rgba(251, 7, 217, 1) 75%,
+      rgba(255, 0, 0, 1) 100%);
+  box-shadow: none;
+  /* margin-top: 1vh; */
+  width: 100%;
+  padding: 0.5em;
+  color: white;
+  border-radius: 25px;
+}
+
+/* a {
+  font-family: geo-light;
+} */
+
+p {
+  font-family: geo-light;
+}
+
+@font-face {
   font-family: geo-medium;
   src: url(geomanist-medium-webfont.ttf);
 }
@@ -25,54 +70,36 @@
   color: #fff;
   background-color: black;
   outline: 1px solid rgba(0, 0, 0, 0.241);
-  
- 
 }
 
 @media (max-width: 380px) {
-  .swiper-slide{
+  .swiper-slide {
     justify-content: initial;
     align-items: initial;
   }
- 
- }
+}
 
 @media (max-width: 480px) {
-  .swiper{
+  .swiper {
     width: 80vw;
     height: 65vh;
-
   }
-
- 
-  
- 
 }
 
 @media (max-width:280px) {
-  .swiper{
+  .swiper {
     height: 75vh;
-
   }
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: white;
   height: 12px;
   width: 12px;
   transition: all 200ms;
-
- 
-} 
-.swiper-pagination-bullet-active{
-   background-color: white;
-   box-shadow: 0 0 .1em .1em white;
 }
 
-
-
-
-
-
-
-
+.swiper-pagination-bullet-active {
+  background-color: white;
+  box-shadow: 0 0 .1em .1em white;
+}
