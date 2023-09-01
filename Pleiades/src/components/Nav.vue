@@ -11,7 +11,7 @@
           >
             <img
               class="navbar-brand"
-              src="../assets/img/White logo - no background.png"
+              src="../assets/img/white-logo-no-background.png"
               alt=""
             />
           </a>
@@ -77,8 +77,6 @@ export default {
   setup() {
     let canvasOpen = ref(false);
 
-    function scrollTo() {}
-
     onMounted(() => {
       let nav = document.getElementById("nav");
       let home = document.getElementById("navlogo");
@@ -102,29 +100,6 @@ export default {
         }
 
         lastScrollTop = scrollTop; //New Position Stored
-
-        let scroll =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop ||
-          0;
-
-        // if (scroll > 400 && scroll < 1000) {
-        //   // nav.style.opacity = 1;
-        //   window.history.pushState("object or string", "Title", "/#services");
-        // }
-
-        // if (scroll > 2800 && scroll < 3600) {
-        //   window.history.pushState("object or string", "Title", "/#whyus");
-        // }
-
-        // if (scroll > 3600 && scroll < 4000) {
-        //   window.history.pushState("object or string", "Title", "/#works");
-        // }
-
-        // if (scroll > 4000) {
-        //   window.history.pushState("object or string", "Title", "/#contact");
-        // }
       });
     });
     return {

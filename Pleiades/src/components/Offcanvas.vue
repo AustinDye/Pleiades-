@@ -47,13 +47,14 @@ export default {
     // onMounted(() => {
     //   let offcanvas = document.querySelector(".offcanvas");
     //   offcanvas.addEventListener("show.bs.offcanvas", () => {
-    //     let eclipse = document.querySelector(".eclipse");
-    //     eclipse.style.marginRight = "50px";
-    //     console.log(eclipse, "open");
+    //     let body = document.querySelector("body");
+    //     body.style.paddingRight = "15px";
+    //     console.log(body, "open");
     //   });
     //   offcanvas.addEventListener("hide.bs.offcanvas", () => {
-    //     let eclipse = document.querySelector(".eclipse");
-    //     console.log(eclipse, "close");
+    //     let body = document.querySelector("body");
+    //     body.style.paddingRight = "-5px";
+    //     console.log(body, "close");
     //   });
     // });
     return {};
@@ -67,5 +68,6 @@ export default {
   z-index: 1041 !important;
   margin-top: 0 !important;
   max-height: 100vh !important;
+  overflow-y: auto;
 }
 </style>

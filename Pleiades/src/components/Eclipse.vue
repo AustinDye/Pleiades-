@@ -1,6 +1,6 @@
 <template>
   <div class="eclipse">
-    <img id="logo" src="../assets/img/White logo - no background.png" alt="" />
+    <img id="logo" src="../assets/img/white-logo-no-background.png" alt="" />
     <div id="moon" class="space-circle"></div>
     <div id="moon2" class="space-circle-2"></div>
   </div>
@@ -21,7 +21,7 @@ export default {
         0;
 
       moon1.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 1));
-      moon2.style.opacity = Math.max(0, Math.min(1, -scroll / 4000 + 1));
+      moon2.style.opacity = Math.max(0, Math.min(1, -scroll / 2500 + 1));
       logo.style.opacity = Math.max(0, Math.min(1, -scroll / 300 + 1));
 
       let moonheight = scroll * 0.75;
