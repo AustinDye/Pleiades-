@@ -20,35 +20,40 @@
               is always running smoothly.
             </p>
           </div>
-          <img
-            loading="lazy"
-            class="image-icon d-none d-lg-flex"
-            id="seo"
-            src="../assets/img/custom.png"
-            alt=""
-          />
+          <div class="img-wrapper">
+            <img
+              loading="lazy"
+              class=""
+              id="seo"
+              src="../assets/img/custom.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <div class="col-12" v-scrollanimation>
         <div class="card-holder">
-          <img
-            loading="lazy"
-            class="image-icon d-none d-lg-flex"
-            id="seo"
-            src="../assets/img/seo.png"
-            alt=""
-          />
-          <div class="text-wrapper">
+          <div class="img-wrapper img-wrapper-2">
+            <img
+              loading="lazy"
+              class=""
+              id="seo"
+              src="../assets/img/seo.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text-wrapper text-wrapper-2">
             <b class="dark-side">SEO</b>
             <b> / Advertising</b>
             <p class="body-text">
-              Running a business online can be complicated, and works at its
+              Running a business online can be complicated, and it works at its
               best when operating under one, cohesive plan. At Pleiades, we can
               handle anything from SEO to SEM, adwords, strategy, and
-              brand-planning. We work at your level, making sure you stay
-              competitive in your areas of operation while also discovering new
-              avenues that your competitors don't utilize. And most
-              importantly...
+              brand-planning. We also specialize in Google Ads, and can create
+              campaigns at nearly any budget. We work at your level, making sure
+              you stay competitive in your areas of operation while also
+              discovering new avenues that your competitors don't utilize.
             </p>
           </div>
         </div>
@@ -56,26 +61,30 @@
       <div class="col-12" v-scrollanimation>
         <div class="card-holder">
           <div class="text-wrapper">
-            <b>The Right </b>
-            <b class="dark-side">Prices</b>
+            <b>Custom </b>
+            <b class="dark-side">App </b>
+            <b>Development</b>
             <p class="body-text">
-              At Pleiades, we charge a fair price for our services. The
-              complexity of online marketing is often intentional exaggerated by
-              agencies offering SEO and SEM services --- we don't do that. Our
-              monthly reports tell you everything that we're doing and how it
-              works, so that you can be a part of the process. When designing
-              websites and apps, we're happy to work with your budget and your
-              needs, whether that's creating a work of art online or giving you
-              something quick and clean that you can run yourself.
+              Pleiades is comprised of software engineers who have fun making
+              things. What that means is that not only are we literate in the
+              technologies that comprise the web, we can use them to create
+              things that are entirely new. We've already created a few apps for
+              our clients, and have lots more planned. We specialize in
+              cost-effective, highly expandable web apps that live in the cloud.
+              <a href="#contact"
+                >Talk to us about starting your own project.
+              </a>
             </p>
           </div>
-          <img
-            loading="lazy"
-            class="image-icon d-none d-lg-flex"
-            id="fullstack"
-            src="../assets/img/coding.png"
-            alt=""
-          />
+          <div class="img-wrapper">
+            <img
+              loading="lazy"
+              class=""
+              id="fullstack"
+              src="../assets/img/coding.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -143,12 +152,16 @@ h1 {
   transform: translateY(0);
 }
 .card-holder {
-  padding: 3em;
+  padding: 2em;
   border-radius: 25px;
   backdrop-filter: blur(5px);
   display: flex;
   @media (max-width: 480px) {
     padding: 0;
+  }
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    margin-bottom: 50px;
   }
   width: 100%;
 }
@@ -169,6 +182,10 @@ h1 {
   }
 }
 
+.text-wrapper-2 {
+  order: 1;
+}
+
 .text-wrapper b {
   font-size: 3em;
 
@@ -187,17 +204,29 @@ h1 {
   }
 }
 
-img {
-  width: 50%;
+.img-wrapper {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  // height: 100%;
+}
 
-  @media (max-width: 480px) {
-    width: 25%;
-    height: 25%;
-  }
+.img-wrapper-2 {
+  order: 2;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+
+  // @media (max-width: 740px) {
+  //   height: auto;
+  //   max-width: 100%;
+  // }
 }
 
 #seo {
-  padding-top: 5vh;
-  height: 50%;
+  // padding-top: 5vh;
+  // height: 50%;
 }
 </style>

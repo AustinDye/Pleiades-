@@ -3,7 +3,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
-          <a id="navlogo" class="d-md-flex" href="#navlogo">
+          <a
+            id="navlogo"
+            class="d-md-flex"
+            href="#navlogo"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          >
             <img
               class="navbar-brand"
               src="../assets/img/White logo - no background.png"
@@ -71,6 +76,9 @@ export default {
   name: "App",
   setup() {
     let canvasOpen = ref(false);
+
+    function scrollTo() {}
+
     onMounted(() => {
       let nav = document.getElementById("nav");
       let home = document.getElementById("navlogo");
@@ -101,22 +109,22 @@ export default {
           document.body.scrollTop ||
           0;
 
-        if (scroll > 400 && scroll < 1000) {
-          // nav.style.opacity = 1;
-          window.history.pushState("object or string", "Title", "/#services");
-        }
+        // if (scroll > 400 && scroll < 1000) {
+        //   // nav.style.opacity = 1;
+        //   window.history.pushState("object or string", "Title", "/#services");
+        // }
 
-        if (scroll > 2800 && scroll < 3600) {
-          window.history.pushState("object or string", "Title", "/#whyus");
-        }
+        // if (scroll > 2800 && scroll < 3600) {
+        //   window.history.pushState("object or string", "Title", "/#whyus");
+        // }
 
-        if (scroll > 3600 && scroll < 4000) {
-          window.history.pushState("object or string", "Title", "/#works");
-        }
+        // if (scroll > 3600 && scroll < 4000) {
+        //   window.history.pushState("object or string", "Title", "/#works");
+        // }
 
-        if (scroll > 4000) {
-          window.history.pushState("object or string", "Title", "/#contact");
-        }
+        // if (scroll > 4000) {
+        //   window.history.pushState("object or string", "Title", "/#contact");
+        // }
       });
     });
     return {
@@ -129,6 +137,7 @@ export default {
 <style lang="scss" scoped>
 #nav {
   transition: top 0.3s ease;
+  // z-index: 1042;
 }
 
 .hideNav {
@@ -141,15 +150,17 @@ export default {
   font-weight: 900;
   // outline: 0.1em solid rgba(255, 255, 255, 0.302);
   // transition: all 500ms;
-
-  @media (max-width: 820px) {
-    margin-top: 0;
-    width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0;
-    outline: none;
-  }
+  // @media (max-width: 1500px) {
+  // max-height: 70px;
+  // }
+  // @media (max-width: 820px) {
+  //   margin-top: 0;
+  //   width: 100vw;
+  //   margin-left: 0;
+  //   margin-right: 0;
+  //   border-radius: 0;
+  //   outline: none;
+  // }
 }
 
 .navItem {
@@ -160,6 +171,9 @@ export default {
   flex-grow: 1;
   a {
     position: relative;
+  }
+  @media (max-width: 820px) {
+    display: none;
   }
 }
 
@@ -189,18 +203,18 @@ export default {
 .navbar-toggler {
   outline: none;
   border: none;
-  font-size: 1.3em;
+  font-size: 1.2em;
   span {
     color: rgba(255, 255, 255, 0.713);
     position: relative;
     padding-bottom: 3px;
   }
 
-  @media (max-width: 380px) {
-    font-size: 0.8em;
-    height: 40px;
-    width: 30%;
-  }
+  // @media (max-width: 380px) {
+  //   font-size: 0.8em;
+  //   height: 40px;
+  //   width: 30%;
+  // }
 }
 
 .navbar-toggler:hover,
@@ -215,8 +229,8 @@ export default {
 }
 
 a {
-  font-weight: 500;
-  font-size: 1.3em;
+  // font-weight: 500;
+  font-size: 1.2em;
   color: rgba(255, 255, 255, 0.713);
   text-decoration: none;
   transition: 0.12s;
@@ -228,10 +242,13 @@ a {
 
 .navbar-brand {
   // padding: 1em;
-  width: 80%;
+  width: 65%;
 
   @media (max-width: 380px) {
     width: 50%;
+  }
+  @media (max-width: 1020px) {
+    width: 15em;
   }
 }
 

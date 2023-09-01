@@ -1,22 +1,21 @@
 const animatedScollObserver = new IntersectionObserver(
-    (entries ,animatedScollObserver) => {
-     entries.forEach((entry) => {
+  (entries, animatedScollObserver) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-       entry.target.classList.add('enter')
-       animatedScollObserver.unobserve(entry.target)
+        entry.target.classList.add('enter')
+        animatedScollObserver.unobserve(entry.target)
       }
-     })
-    }
-   )
-   
-   
-   export const scrollAnimate =  ( el,binding) =>  
-   {
-    if (!binding.value) {
-     binding.value = {before:'before-enter', after:"upon-exit"}
-    }
-     console.log(binding);
-     el.classList.add('before-enter')
-     animatedScollObserver.observe(el)
-    
-   }
+    })
+  }
+)
+
+
+export const scrollAnimate = (el, binding) => {
+  if (!binding.value) {
+    binding.value = { before: 'before-enter', after: "upon-exit" }
+  }
+  //  console.log(binding);
+  el.classList.add('before-enter')
+  animatedScollObserver.observe(el)
+
+}

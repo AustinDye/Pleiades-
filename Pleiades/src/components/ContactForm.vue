@@ -1,57 +1,88 @@
 <template>
   <form
+    @submit.prevent="handleSubmit(form)"
     class="formContainer"
-    :action="endpoint"
-    @submit="handleSubmit"
     method="POST"
     target="_blank"
   >
-    <div class="form-elems">
+    <div class="confirmation" v-if="submitted">
+      <span>Thanks for your message!</span>
+      <span>We'll get back to you right quick 🚀</span>
+    </div>
+    <div class="form-elems" v-if="!submitted">
       <div class="d-flex justify-content-between">
         <div class="d-flex flex-column w-48">
-          <label for="name" class="visibility-hidden"></label>
-          <input type="text" placeholder="Your name" name="name" required />
+          <label for="name" class="invisible">Name input</label>
+          <input
+            v-model.lazy="form.name"
+            type="text"
+            placeholder="Your name"
+            name="name"
+            required
+          />
         </div>
         <div class="d-flex flex-column w-48">
-          <label for="email" class="visibility-hidden"></label>
-          <input type="email" placeholder="Email" name="email" required />
+          <label for="email" class="invisible">Email Input</label>
+          <input
+            v-model.lazy="form.email"
+            type="email"
+            placeholder="Email"
+            name="email"
+            required
+          />
         </div>
       </div>
-      <label for="message" class="visibility-hidden"></label>
+      <label for="message" class="invisible">Message text area</label>
       <textarea
+        v-model="form.message"
         class="message"
         placeholder="Your message"
         name="message"
         required
       />
     </div>
-    <rainbow-button :displayMessage="'Send Us a Message'" />
+    <rainbow-button v-if="!submitted" :displayMessage="'Send Us a Message'" />
   </form>
-  <div v-if="submitted">
-    <h2>Thanks you!</h2>
+  <!-- <div v-if="submitted">
+    <h2>Thank you!</h2>
     <div>We'll be in touch soon.</div>
-  </div>
+  </div> -->
 </template>
 
 
 <script>
-import { ref } from "vue";
+import { reactive, ref } from "vue";
+import axios from "axios";
 import RainbowButton from "./RainbowButton.vue";
 export default {
   components: { RainbowButton },
   setup() {
     const submitted = ref(false);
-    const endpoint =
-      "https://public.herotofu.com/v1/35805ee0-912b-11ed-a003-6f0b76086b1c";
+    const form = reactive({
+      name: "",
+      email: "",
+      message: "",
+    });
+    const sendReady = ref(false);
 
     function handleSubmit(formData) {
-      setTimeout(() => {
-        submitted.value = true;
-      }, 100);
+      axios
+        .post(
+          "https://pleiades-website-email-gateway.azurewebsites.net/api/pleiades-site-email-gate",
+          formData
+        )
+        .then(() => {
+          submitted.value = true;
+          window.history.pushState("object or string", "Title", "/#thanks");
+          form.name = "";
+          form.email = "";
+          form.message = "";
+        });
     }
+
     return {
       submitted,
-      endpoint,
+      form,
       handleSubmit,
     };
   },
@@ -64,8 +95,14 @@ export default {
   width: 100%;
 }
 
-.form-elems {
+.confirmation {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elems {
+  // height: 100%;
 }
 
 input {
@@ -77,6 +114,11 @@ input {
 
 .w-48 {
   width: 48%;
+}
+
+label {
+  visibility: hidden;
+  font-size: 1px;
 }
 
 textarea {

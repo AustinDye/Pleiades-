@@ -33,15 +33,29 @@
 
 
 <script>
+import { onMounted, watchEffect } from "vue";
 import ContactForm from "./ContactForm.vue";
 export default {
   components: { ContactForm },
   props: {
     canvasOpen: {
       type: Boolean,
+      required: true,
     },
   },
   setup() {
+    // onMounted(() => {
+    //   let offcanvas = document.querySelector(".offcanvas");
+    //   offcanvas.addEventListener("show.bs.offcanvas", () => {
+    //     let eclipse = document.querySelector(".eclipse");
+    //     eclipse.style.marginRight = "50px";
+    //     console.log(eclipse, "open");
+    //   });
+    //   offcanvas.addEventListener("hide.bs.offcanvas", () => {
+    //     let eclipse = document.querySelector(".eclipse");
+    //     console.log(eclipse, "close");
+    //   });
+    // });
     return {};
   },
 };
@@ -49,4 +63,9 @@ export default {
 
 
 <style lang="scss" scoped>
+.offcanvas {
+  z-index: 1041 !important;
+  margin-top: 0 !important;
+  max-height: 100vh !important;
+}
 </style>

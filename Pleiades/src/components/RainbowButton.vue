@@ -1,5 +1,5 @@
 <template>
-  <a class="rainbow rainbow-5">{{ displayMessage }}</a>
+  <button class="rainbow rainbow-5">{{ displayMessage }}</button>
 </template>
 
 

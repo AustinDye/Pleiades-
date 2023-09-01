@@ -8,7 +8,7 @@
   >
     <div class="row">
       <div
-        class="col-6 contact-info justify-content-center align-items-center d-flex flex-column"
+        class="col-lg-6 contact-info justify-content-center align-items-center d-flex flex-column"
         v-scrollanimation
       >
         <h5>Pleiades Projectworks LLC</h5>
@@ -17,7 +17,7 @@
         <p>9 - 5</p>
       </div>
       <div
-        class="col-6 contact-form d-flex justify-content-center align-items-center d-flex flex-column p-5"
+        class="col-lg-6 contact-form d-flex justify-content-center align-items-center d-flex flex-column p-5"
         v-scrollanimation
       >
         <contact-form />
@@ -79,6 +79,9 @@ export default {
   @media (max-width: 480px) {
     width: 90%;
   }
+  @media (max-width: 1020px) {
+    height: auto;
+  }
 }
 
 h1 {
@@ -118,6 +121,11 @@ p {
     border-radius: 0px 0px 25px 25px;
     margin-bottom: 7vh;
   }
+  @media (max-width: 1020px) {
+    height: auto;
+    width: 100%;
+    border-radius: 0px 0px 25px 25px;
+  }
 }
 
 .contact-info {
@@ -132,6 +140,10 @@ p {
   }
   @media (max-width: 500px) {
     border-radius: 25px 25px 0px 0px;
+  }
+  @media (max-width: 1020px) {
+    height: auto;
+    padding: 2rem 0;
   }
 }
 

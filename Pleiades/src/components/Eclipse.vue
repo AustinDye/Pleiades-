@@ -21,6 +21,7 @@ export default {
         0;
 
       moon1.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 1));
+      moon2.style.opacity = Math.max(0, Math.min(1, -scroll / 4000 + 1));
       logo.style.opacity = Math.max(0, Math.min(1, -scroll / 300 + 1));
 
       let moonheight = scroll * 0.75;
@@ -52,15 +53,15 @@ export default {
     left: 50%;
     width: 35vh;
     height: 35vh;
-    transition: all 1000ms;
-    transition: margin 200ms;
+    // transition: all 1000ms;
+    // transition: margin 200ms;
 
     transform: translate(-50%, -50%);
   }
 
   /* Media Query for low resolution  Tablets, Ipads */
-  @media (min-width: 481px) and (max-width: 767px) {
-  }
+  // @media (min-width: 481px) and (max-width: 767px) {
+  // }
 
   /* Media Query for Tablets Ipads portrait mode */
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -72,8 +73,8 @@ export default {
   }
 
   /* Media Query for Laptops and Desktops */
-  @media (min-width: 1025px) and (max-width: 1280px) {
-  }
+  // @media (min-width: 1025px) and (max-width: 1280px) {
+  // }
 }
 .space-circle-2 {
   background-color: black;
@@ -85,6 +86,7 @@ export default {
   display: flex;
   width: 100vw;
   height: 100vh;
+  offset: right 1px;
 }
 
 .eclipse img {
@@ -110,7 +112,7 @@ export default {
   /* Media Query for Tablets Ipads portrait mode */
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 40vw;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

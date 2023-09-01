@@ -1,7 +1,7 @@
 <template>
   <div id="whyus" class="container d-block d-lg-flex justify-content-center">
-    <div class="wrapper w-30 rounded-left d-flex">
-      <div class="row main-row justify-content-center align-items-center">
+    <div class="wrapper d-flex">
+      <div class="row tech-column justify-content-center align-items-start">
         <div class="col-12 text-center">
           <div class="d-block">
             <b>We</b>
@@ -15,7 +15,7 @@
         >
           <img
             loading="lazy"
-            class="img-brand"
+            class="img-fill"
             src="../assets/img/vue.png"
             alt=""
           />
@@ -26,7 +26,7 @@
         >
           <img
             loading="lazy"
-            class="img-brand"
+            class="img-fill"
             src="../assets/img/shopify.png"
             alt=""
           />
@@ -37,8 +37,8 @@
         >
           <img
             loading="lazy"
-            class="img-brand"
-            src="../assets/img/wordpress.png"
+            class="img-fill"
+            src="../assets/img/firebase.png"
             alt=""
           />
         </div>
@@ -48,53 +48,87 @@
         >
           <img
             loading="lazy"
-            class="img-brand azure"
+            class="img-fill"
+            src="../assets/img/google_ads.svg.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="col-6 col-lg-12 d-flex justify-content-center align-items-center"
+          v-scrollanimation
+        >
+          <img
+            loading="lazy"
+            class="img-fill azure"
             src="../assets/img/azure.png"
             alt=""
           />
         </div>
       </div>
-    </div>
-
-    <div class="wrapper w-70 rounded-right d-flex">
-      <div class="row justify-content-between align-items-center">
+      <div class="row pitch-column justify-content-between align-items-center">
         <div
-          class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2"
+          class="col-md-12 mb-5 d-flex flex-column justify-content-center align-items-center"
           v-scrollanimation
         >
           <div class="d-md-flex">
-            <b class="dark-side">Customized </b>
+            <b>All at The Right </b>
+            <b class="dark-side">Prices</b>
+          </div>
+          <p class="body-text">
+            At Pleiades, we charge a fair price for our services. The complexity
+            of online marketing is often intentionally exaggerated by agencies
+            offering SEO and SEM services --- we don't do that. Our monthly
+            reports tell you everything that we're doing and how it works, so
+            that you can be a part of the process. When designing websites and
+            apps, we're happy to work with your budget and your needs, whether
+            that's creating a work of art online or giving you something quick
+            and clean that you can run yourself.
+            <a href="#contact">Find out more.</a>
+          </p>
+        </div>
+        <div
+          class="col-md-12 mb-5 d-flex flex-column justify-content-center align-items-center"
+          v-scrollanimation
+        >
+          <div class="d-md-flex">
+            <b>A</b>
+            <b class="dark-side">Tailored</b>
             <b>Experience</b>
           </div>
 
           <p class="body-text">
-            At Pleiades, we specialize in creating custom websites for
-            businesses and organizations of all sizes. We take pride in our
-            ability to understand our clients' needs and goals, and use that
-            understanding to craft visually stunning and highly functional
-            websites. Our team of experienced designers and developers work
-            closely with each client to ensure that their website is not only
-            visually appealing, but also effectively communicates their brand
-            and meets the needs of their target audience. Whether you need a
-            simple brochure website or a complex e-commerce platform, we have
-            the skills and expertise to bring your vision to life.
+            We specialize in creating custom websites for businesses and
+            organizations of all sizes. We take pride in our ability to
+            understand our clients' needs and goals, and use that understanding
+            to craft visually stunning and highly functional websites. Our team
+            of experienced designers and developers work closely with each
+            client to ensure that their website is not only visually appealing,
+            but also effectively communicates their brand and meets the needs of
+            their target audience. Whether you need a simple brochure website or
+            a complex e-commerce platform, we have the skills and expertise to
+            bring your vision to life.
           </p>
         </div>
         <div
-          class="col-md-12 d-flex flex-column justify-content-center align-items-center my-2"
+          class="col-md-12 d-flex flex-column justify-content-center align-items-center"
           v-scrollanimation
         >
           <div class="d-md-flex">
-            <b>Web </b>
-            <b class="dark-side">Apps</b>
+            <b class="">The</b>
+            <b class="dark-side">Customer</b>
+            <b>First</b>
           </div>
           <p class="body-text">
-            Our web application development services include custom web app
-            development, e-commerce applications, content management systems
-            (CMS) and business automation. With custom web app development, our
-            team will work closely with you to understand your business needs
-            and create a custom web application that streamlines your operations
-            and improves productivity.
+            This means two things: the first is that the web is a place of
+            constant change, where trends, styles, and technologies become
+            outdated. Many companies are willing to sell a website that never
+            changes, but if you are subscribed to any of our web-service
+            programs, we'll make sure your website never looks outdated and make
+            minor changes whenever you want at no extra charge. The second part
+            of our Customer First Policy means that we talk to you every step of
+            the way in designing both websites and online strategies. And if
+            somehow you don't like what we've made for you, we'll fix it for
+            free.
           </p>
         </div>
       </div>
@@ -120,7 +154,8 @@ export default {};
 }
 
 .container {
-  height: 100vh;
+  // height: 100vh;
+  // min-height: fit-content;
   margin-top: 15vh;
 }
 
@@ -153,31 +188,35 @@ p {
 
 .wrapper {
   padding: 3em;
+  border-radius: 25px;
   height: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   align-self: center;
-  @media (max-width: 900px) {
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    // height: 100%;
+    // width: 100%;
+    // border-radius: 25px;
   }
 }
 
-.wrapper-2 {
-  padding: 5em;
-  background-color: rgb(255, 255, 255);
+.tech-column {
   display: flex;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 900px) {
-    height: auto;
-    border-radius: 25px;
-    margin-top: 15vh;
-    padding: 2.5em;
+  padding: 2rem;
+  @media (max-width: 1020px) {
+    order: 2;
+  }
+}
+
+.pitch-column {
+  display: flex;
+  padding: 2rem 4rem;
+  @media (max-width: 1020px) {
+    order: 1;
+    padding: 1.5rem;
   }
 }
 
@@ -195,26 +234,22 @@ p {
     font-size: 1em;
   }
 }
-.img-brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 10vh;
-
-  margin-top: 2em;
+.img-fill {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: auto;
+  height: auto;
+  max-height: 15vh;
+  max-width: 25vh;
+  // margin-top: 2em;
   @media (max-width: 900px) {
     max-height: 7vh;
   }
 }
 
 .azure {
-  max-height: 10vh;
-
-  padding: 1em;
-  @media (max-width: 900px) {
-    max-height: 9vh;
-    margin-left: 15%;
-  }
+  padding: 0.25rem;
 }
 
 .body-text {

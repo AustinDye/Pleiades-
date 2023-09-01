@@ -29,13 +29,12 @@
                 class="col-md-6 d-flex justify-content-center align-items-center flex-column"
               >
                 <ul>
-                  <li>Shopify Storefront</li>
-                  <li>Vue.js Diamond Picker</li>
-                  <li>Vue.js Apointment Calandar</li>
                   <li>Custom Web Design</li>
+                  <li>Google Workspace Solutions</li>
+                  <li>Vue.js Diamond Picker</li>
                 </ul>
                 <div class="link-tag">
-                  <a href="https://portschesfinejewelry.com/"
+                  <a target="blank" href="https://portschesfinejewelry.com/"
                     >Check out the site!</a
                   >
                 </div>
@@ -61,7 +60,7 @@
                   <li>Custom Web Design</li>
                 </ul>
                 <div class="link-tag">
-                  <a href="https://debbiedyetcservices.com/#/"
+                  <a target="blank" href="https://debbiedyetcservices.com/#/"
                     >Check out the site!</a
                   >
                 </div>

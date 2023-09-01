@@ -1,6 +1,16 @@
 @import './base.css';
 
 @font-face {
+  font-family: geo-medium;
+  src: url(geomanist-medium-webfont.ttf);
+}
+
+@font-face {
+  font-family: geo-light;
+  src: url(geomanist-light-webfont.ttf);
+}
+
+@font-face {
   font-family: alata;
   src: url(Alata-Regular.ttf);
 }
@@ -16,19 +26,24 @@ h3,
 h4,
 h5,
 h6,
-a,
-b,
-span {
+b {
   font-family: alata;
   margin: 0;
 }
 
+a,
+span {
+  font-family: geo-light;
+  font-weight: 100;
+  color: inherit;
+}
+
+a:hover {
+  color: #ffb725;
+}
+
 .button {
-  background: linear-gradient(90deg,
-      black 0%,
-      black 50%,
-      rgba(251, 7, 217, 1) 75%,
-      rgba(255, 0, 0, 1) 100%);
+  font-family: geo-light;
   box-shadow: none;
   /* margin-top: 1vh; */
   width: 100%;
@@ -37,22 +52,8 @@ span {
   border-radius: 25px;
 }
 
-/* a {
-  font-family: geo-light;
-} */
-
 p {
   font-family: geo-light;
-}
-
-@font-face {
-  font-family: geo-medium;
-  src: url(geomanist-medium-webfont.ttf);
-}
-
-@font-face {
-  font-family: geo-light;
-  src: url(geomanist-light-webfont.ttf);
 }
 
 .swiper {
