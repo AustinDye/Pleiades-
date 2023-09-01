@@ -3,7 +3,7 @@
     <div class="wrapper d-flex">
       <div class="row tech-column justify-content-center align-items-start">
         <div class="col-12 text-center">
-          <div class="d-block">
+          <div class="d-block mb-4">
             <b>We</b>
             <b class="dark-side">Use</b>
           </div>
@@ -70,8 +70,8 @@
           class="col-md-12 mb-5 d-flex flex-column justify-content-center align-items-center"
           v-scrollanimation
         >
-          <div class="d-md-flex">
-            <b>All at The Right </b>
+          <div class="d-flex flex-wrap">
+            <b>The Right </b>
             <b class="dark-side">Prices</b>
           </div>
           <p class="body-text">
@@ -90,7 +90,7 @@
           class="col-md-12 mb-5 d-flex flex-column justify-content-center align-items-center"
           v-scrollanimation
         >
-          <div class="d-md-flex">
+          <div class="d-flex flex-wrap">
             <b>A</b>
             <b class="dark-side">Tailored</b>
             <b>Experience</b>
@@ -113,7 +113,7 @@
           class="col-md-12 d-flex flex-column justify-content-center align-items-center"
           v-scrollanimation
         >
-          <div class="d-md-flex">
+          <div class="d-flex flex-wrap">
             <b class="">The</b>
             <b class="dark-side">Customer</b>
             <b>First</b>
@@ -216,7 +216,7 @@ p {
   padding: 2rem 4rem;
   @media (max-width: 1020px) {
     order: 1;
-    padding: 1.5rem;
+    padding: 0;
   }
 }
 

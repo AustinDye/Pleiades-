@@ -149,6 +149,9 @@ export default {
   background: rgba(0, 0, 0, 0.73);
   backdrop-filter: blur(4px);
   border-radius: 25px;
+  @media (max-width: 1020px) {
+    height: auto;
+  }
 }
 
 .contact-link {

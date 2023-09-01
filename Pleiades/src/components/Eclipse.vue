@@ -45,8 +45,8 @@ export default {
   transform: translate(-50%, -50%);
   filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
   animation: glow 5s infinite;
-  //   transition: all 1ms;
-  //   transition: margin 1ms;
+  transition: all 1ms;
+  transition: margin 1ms;
 
   @media (max-width: 480px) {
     top: 50%;
@@ -86,7 +86,7 @@ export default {
   display: flex;
   width: 100vw;
   height: 100vh;
-  offset: right 1px;
+  // offset: right 1px;
 }
 
 .eclipse img {
