@@ -113,7 +113,7 @@ p {
   background-color: white;
   padding: 2em;
   width: 50%;
-  height: 65vh;
+  height: 70vh;
   border-radius: 0px 25px 25px 0px;
   @media (max-width: 500px) {
     height: 100%;
@@ -129,8 +129,7 @@ p {
 
 .contact-info {
   background-color: black;
-
-  height: 65vh;
+  height: 70vh;
   border-radius: 25px 0px 0px 25px;
   @media (max-width: 480px) {
     height: 100%;

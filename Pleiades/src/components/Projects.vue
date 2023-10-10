@@ -5,10 +5,10 @@
         class="col-12 justify-content-center align-items-center d-flex flex-column left-side"
       >
         <h1 class="text-center">Our Work</h1>
-        <p class="text-center">Check out our past projects.</p>
+        <p class="text-center">Check out our past work.</p>
       </div>
       <div
-        class="col-12 justify-content-center align-items-center d-flex right-side py-5"
+        class="col-12 justify-content-center bg-black align-items-center d-flex w-md-100 g-0"
       >
         <swiper
           :spaceBetween="30"
@@ -78,15 +78,21 @@
           </swiper-slide>
         </swiper>
       </div>
+      <div class="check-us-out w-100 bg-white p-5 right-side">
+        <h2>Check out our profiles on:</h2>
+        <div class="">
+          <a
+            class="d-flex align-items-center p-3"
+            target="blank"
+            rel="nofollow"
+            href="https://www.designrush.com/agency/profile/pleiades-projectworks"
+          >
+            <div class="design-rush"></div>
+            <span class="fs-4">Design Rush</span>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <!--<div class="row justify-content-center align-items-center">
-                <div class="col-12"></div>
-                <div class="col-12 col-md-4 img-brand deb"><img src="../assets/img/Screenshot 2023-01-01 at 11.13.37 AM.png" alt=""></div>
-                <div class="col-12 col-md-4 img-brand"><img src="../assets/img/portsches-logo.webp" alt=""></div>
-                <div class="col-12 col-md-4 img-brand"><h5>Show up here! Be our next project.</h5></div>
-        
-            </div>-->
   </div>
 </template>
 
@@ -117,13 +123,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.2em;
+}
 .port {
   background: url("../assets/img/port-site.png");
   background-position: center;
   background-size: cover;
   width: 50vw;
   height: 50vh;
-  border-radius: 25px;
+  // border-radius: 25px;
   position: absolute;
   @media (max-width: 480px) {
     width: 79vw;
@@ -194,6 +220,7 @@ export default {
 
 .swiper-slide {
   height: 50vh;
+  justify-content: center;
 }
 
 ul {
@@ -220,7 +247,6 @@ ul {
 .right-side {
   background-color: black;
   border-radius: 0px 0px 25px 25px;
-  width: 100%;
 
   @media (max-width: 900px) {
     height: 100%;
@@ -228,20 +254,20 @@ ul {
     border-radius: 0px 0px 25px 25px;
   }
 }
-a {
-  padding: 1em;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
+
+.check-us-out {
+  min-height: 15vh;
+  span {
+    color: black;
+  }
 }
 
-h1 {
-  font-size: 5em;
-  font-weight: 900;
-}
-
-p {
-  font-size: 1.2em;
+.design-rush {
+  height: 70px;
+  width: 70px;
+  background-image: url("https://www.designrush.com/topbest/images/svg/designrush-new-logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .link-tag {

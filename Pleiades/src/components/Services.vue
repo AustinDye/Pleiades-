@@ -62,8 +62,8 @@
         <div class="card-holder">
           <div class="text-wrapper">
             <b>Custom </b>
-            <b class="dark-side">App </b>
-            <b>Development</b>
+            <b class="dark-side">App</b>
+            <b> Development</b>
             <p class="body-text">
               Pleiades is comprised of software engineers who have fun making
               things. What that means is that not only are we literate in the
@@ -71,9 +71,7 @@
               things that are entirely new. We've already created a few apps for
               our clients, and have lots more planned. We specialize in
               cost-effective, highly expandable web apps that live in the cloud.
-              <a href="#contact"
-                >Talk to us about starting your own project.
-              </a>
+              <a href="#contact">Talk to us about getting online. </a>
             </p>
           </div>
           <div class="img-wrapper">
